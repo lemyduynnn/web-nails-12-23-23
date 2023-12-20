@@ -55,7 +55,7 @@
         "../public/*"
       ],
       "#mdc-imports": [
-        "./mdc-imports"
+        "./file:/Users/lethimyduyen/Documents/intern/web-emily/.nuxt/mdc-imports"
       ],
       "#image": [
         "../node_modules/.pnpm/@nuxt+image@1.0.0-rc.3/node_modules/@nuxt/image/dist/runtime"
