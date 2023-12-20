@@ -21,8 +21,6 @@ pnpm build
 
 ## Author
 
-👤 **Nguyen Viet Bao**
-
 - Website: DTSMarttt
 
 ## Show your support
