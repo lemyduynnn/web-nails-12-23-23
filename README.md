@@ -1,16 +1,20 @@
 # Welcome to web-nails-23-001 👋
 
 ## Project setup
+
 ```sh
 pnpm install
 
 ```
+
 ## Compile and Hot-Reload for Development
+
 ```sh
 pnpm dev
 ```
 
 ## Type-Check, Compile and Minify for Production
+
 ```sh
 pnpm build
 ```
@@ -19,7 +23,7 @@ pnpm build
 
 👤 **Nguyen Viet Bao**
 
-* Website: DTSMART
+- Website: DTSMarttt
 
 ## Show your support
 
