@@ -7,7 +7,7 @@ declare module 'nitropack' {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/core/runtime/nitro/renderer').default>>>>
     }
     '/api/_mdc/highlight': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/shiki/event-handler').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/.pnpm/@nuxtjs+mdc@0.2.2/node_modules/@nuxtjs/mdc/dist/runtime/shiki/event-handler').default>>>>
     }
     '/api/_content/query/:qid/**:params': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/.pnpm/@nuxt+content@2.8.5_vue@3.3.4/node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>

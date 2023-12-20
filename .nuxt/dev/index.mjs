@@ -1,55 +1,55 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/node-fetch-native@1.4.0/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, isEvent, createEvent, getRequestHeader, splitCookiesString, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, lazyEventHandler, getQuery as getQuery$1, getCookie, createError, useBase, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, getResponseStatusText } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/h3/dist/index.mjs';
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { stringify, uneval } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/devalue/index.js';
+import { defineEventHandler, handleCacheHeaders, isEvent, createEvent, getRequestHeader, splitCookiesString, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, lazyEventHandler, getQuery as getQuery$1, getCookie, createError, useBase, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, getResponseStatusText } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/h3@1.8.2/node_modules/h3/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/vue-bundle-renderer@2.0.0/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/devalue@4.3.2/node_modules/devalue/index.js';
 import { renderToString } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/vue@3.3.4/node_modules/vue/server-renderer/index.mjs';
-import { renderSSRHead } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/@unhead/ssr/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/ofetch/dist/node.mjs';
-import destr from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/hookable/dist/index.mjs';
-import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/scule/dist/index.mjs';
-import { klona } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/klona/dist/index.mjs';
-import defu, { defuFn, defu as defu$1 } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/ufo/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/radix3/dist/index.mjs';
-import { getHighlighter, loadWasm } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/shikiji/dist/index.mjs';
-import { extname, isAbsolute } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/pathe/dist/index.mjs';
-import { unified } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/unified/index.js';
-import { toString } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/mdast-util-to-string/index.js';
-import { postprocess, preprocess } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/micromark/dev/index.js';
-import { stringifyPosition } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/unist-util-stringify-position/index.js';
-import { markdownLineEnding, markdownSpace } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/micromark-util-character/dev/index.js';
-import { push, splice } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/micromark-util-chunked/dev/index.js';
-import { resolveAll } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/micromark-util-resolve-all/index.js';
-import { normalizeUri } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/micromark-util-sanitize-uri/dev/index.js';
-import slugify from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/slugify/slugify.js';
-import remarkParse from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/remark-parse/index.js';
-import remark2rehype from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/remark-rehype/index.js';
-import remarkMDC, { parseFrontMatter } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/remark-mdc/dist/index.mjs';
-import { toString as toString$1 } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/hast-util-to-string/index.js';
-import Slugger from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/github-slugger/index.js';
-import { detab } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/detab/index.js';
-import remarkEmoji from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/remark-emoji/index.js';
-import remarkGFM from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/remark-gfm/index.js';
-import rehypeExternalLinks from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/rehype-external-links/index.js';
-import rehypeSortAttributeValues from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/rehype-raw/index.js';
-import { visit } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/unist-util-visit/index.js';
+import { renderSSRHead } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/@unhead+ssr@1.7.4/node_modules/@unhead/ssr/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/ofetch@1.3.3/node_modules/ofetch/dist/node.mjs';
+import destr from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/destr@2.0.1/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/unenv@1.7.4/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/scule@1.0.0/node_modules/scule/dist/index.mjs';
+import { klona } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/klona@2.0.6/node_modules/klona/dist/index.mjs';
+import defu, { defuFn, defu as defu$1 } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/defu@6.1.2/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/ohash@1.1.3/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/ufo@1.3.1/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/unstorage@1.9.0/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/unstorage@1.9.0/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/radix3@1.1.0/node_modules/radix3/dist/index.mjs';
+import { getHighlighter, loadWasm } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/shikiji@0.6.10/node_modules/shikiji/dist/index.mjs';
+import { extname, isAbsolute } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/pathe@1.1.1/node_modules/pathe/dist/index.mjs';
+import { unified } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/unified@11.0.3/node_modules/unified/index.js';
+import { toString } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/mdast-util-to-string@4.0.0/node_modules/mdast-util-to-string/index.js';
+import { postprocess, preprocess } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/micromark@4.0.0/node_modules/micromark/dev/index.js';
+import { stringifyPosition } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/unist-util-stringify-position@4.0.0/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/micromark-util-character@2.0.1/node_modules/micromark-util-character/dev/index.js';
+import { push, splice } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/micromark-util-chunked@2.0.0/node_modules/micromark-util-chunked/dev/index.js';
+import { resolveAll } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/micromark-util-resolve-all@2.0.0/node_modules/micromark-util-resolve-all/index.js';
+import { normalizeUri } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/micromark-util-sanitize-uri@2.0.0/node_modules/micromark-util-sanitize-uri/dev/index.js';
+import slugify from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/slugify@1.6.6/node_modules/slugify/slugify.js';
+import remarkParse from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/remark-parse@10.0.2/node_modules/remark-parse/index.js';
+import remark2rehype from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/remark-rehype@10.1.0/node_modules/remark-rehype/index.js';
+import remarkMDC, { parseFrontMatter } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/remark-mdc@2.0.0/node_modules/remark-mdc/dist/index.mjs';
+import { toString as toString$1 } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/hast-util-to-string@3.0.0/node_modules/hast-util-to-string/index.js';
+import Slugger from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/github-slugger@2.0.0/node_modules/github-slugger/index.js';
+import { detab } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/detab@3.0.2/node_modules/detab/index.js';
+import remarkEmoji from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/remark-emoji@4.0.0/node_modules/remark-emoji/index.js';
+import remarkGFM from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/remark-gfm@3.0.1/node_modules/remark-gfm/index.js';
+import rehypeExternalLinks from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/rehype-external-links@3.0.0/node_modules/rehype-external-links/index.js';
+import rehypeSortAttributeValues from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/rehype-sort-attribute-values@5.0.0/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/rehype-sort-attributes@5.0.0/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/rehype-raw@6.1.1/node_modules/rehype-raw/index.js';
+import { visit } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/unist-util-visit@5.0.0/node_modules/unist-util-visit/index.js';
 import { fileURLToPath } from 'node:url';
-import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/ipx/dist/index.mjs';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/ipx@2.0.0-1/node_modules/ipx/dist/index.mjs';
 import { version, unref } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/vue@3.3.4/node_modules/vue/index.mjs';
-import { createServerHead as createServerHead$1 } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/@unhead/shared/dist/index.mjs';
+import { createServerHead as createServerHead$1 } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/unhead@1.7.4/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/@unhead+shared@1.7.4/node_modules/@unhead/shared/dist/index.mjs';
 
 const r=Object.create(null),E=e=>globalThis.process?.env||globalThis._importMeta_.env||globalThis.Deno?.env.toObject()||globalThis.__env__||(e?r:globalThis),s=new Proxy(r,{get(e,o){return E()[o]??r[o]},has(e,o){const i=E();return o in i||o in r},set(e,o,i){const P=E(!0);return P[o]=i,!0},deleteProperty(e,o){if(!o)return !1;const i=E(!0);return delete i[o],!0},ownKeys(){const e=E(!0);return Object.keys(e)}}),t=typeof process<"u"&&process.env&&"development"||"",p=[["APPVEYOR"],["AWS_AMPLIFY","AWS_APP_ID",{ci:!0}],["AZURE_PIPELINES","SYSTEM_TEAMFOUNDATIONCOLLECTIONURI"],["AZURE_STATIC","INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN"],["APPCIRCLE","AC_APPCIRCLE"],["BAMBOO","bamboo_planKey"],["BITBUCKET","BITBUCKET_COMMIT"],["BITRISE","BITRISE_IO"],["BUDDY","BUDDY_WORKSPACE_ID"],["BUILDKITE"],["CIRCLE","CIRCLECI"],["CIRRUS","CIRRUS_CI"],["CLOUDFLARE_PAGES","CF_PAGES",{ci:!0}],["CODEBUILD","CODEBUILD_BUILD_ARN"],["CODEFRESH","CF_BUILD_ID"],["DRONE"],["DRONE","DRONE_BUILD_EVENT"],["DSARI"],["GITHUB_ACTIONS"],["GITLAB","GITLAB_CI"],["GITLAB","CI_MERGE_REQUEST_ID"],["GOCD","GO_PIPELINE_LABEL"],["LAYERCI"],["HUDSON","HUDSON_URL"],["JENKINS","JENKINS_URL"],["MAGNUM"],["NETLIFY"],["NETLIFY","NETLIFY_LOCAL",{ci:!1}],["NEVERCODE"],["RENDER"],["SAIL","SAILCI"],["SEMAPHORE"],["SCREWDRIVER"],["SHIPPABLE"],["SOLANO","TDDIUM"],["STRIDER"],["TEAMCITY","TEAMCITY_VERSION"],["TRAVIS"],["VERCEL","NOW_BUILDER"],["VERCEL","VERCEL",{ci:!1}],["VERCEL","VERCEL_ENV",{ci:!1}],["APPCENTER","APPCENTER_BUILD_ID"],["CODESANDBOX","CODESANDBOX_SSE",{ci:!1}],["STACKBLITZ"],["STORMKIT"],["CLEAVR"],["ZEABUR"],["CODESPHERE","CODESPHERE_APP_ID",{ci:!0}]];function B(){if(globalThis.process?.env)for(const e of p){const o=e[1]||e[0];if(globalThis.process?.env[o])return {name:e[0].toLowerCase(),...e[2]}}return globalThis.process?.env?.SHELL==="/bin/jsh"&&globalThis.process?.versions?.webcontainer?{name:"stackblitz",ci:!1}:{name:"",ci:!1}}const I=B(),d=I.name;function n(e){return e?e!=="false":!1}const l=globalThis.process?.platform||"",T=n(s.CI)||I.ci!==!1,a=n(globalThis.process?.stdout&&globalThis.process?.stdout.isTTY);n(s.DEBUG);const c=t==="test"||n(s.TEST);n(s.MINIMAL)||T||c||!a;const C=/^win/i.test(l);!n(s.NO_COLOR)&&(n(s.FORCE_COLOR)||(a||C)&&s.TERM!=="dumb"||T);const R=(globalThis.process?.versions?.node||"").replace(/^v/,"")||null;Number(R?.split(".")[0])||null;const w=globalThis.process||Object.create(null),_={versions:{}};new Proxy(w,{get(e,o){if(o==="env")return s;if(o in e)return e[o];if(o in _)return _[o]}});const L=!!globalThis.Netlify,A=!!globalThis.EdgeRuntime,D=globalThis.navigator?.userAgent==="Cloudflare-Workers",O=!!globalThis.Deno,S=!!globalThis.__lagon__,N=globalThis.process?.release?.name==="node",u=!!globalThis.Bun||!!globalThis.process?.versions?.bun,b=!!globalThis.fastly,G=[[L,"netlify"],[A,"edge-light"],[D,"workerd"],[O,"deno"],[S,"lagon"],[N,"node"],[u,"bun"],[b,"fastly"]];function K(){const e=G.find(o=>o[0]);if(e)return {name:e[1]}}const g=K();g?.name||"";
 
@@ -821,9 +821,9 @@ const _chPr2fL3JP = (function(nitro) {
   });
 });
 
-const script = "\"use strict\";(()=>{const a=window,e=document.documentElement,m=[\"dark\",\"light\"],c=window&&window.localStorage&&window.localStorage.getItem&&window.localStorage.getItem(\"nuxt-color-mode\")||\"light\";let n=c===\"system\"?d():c;const l=e.getAttribute(\"data-color-mode-forced\");l&&(n=l),i(n),a[\"__NUXT_COLOR_MODE__\"]={preference:c,value:n,getColorScheme:d,addColorScheme:i,removeColorScheme:f};function i(o){const t=\"\"+o+\"\",s=\"\";e.classList?e.classList.add(t):e.className+=\" \"+t,s&&e.setAttribute(\"data-\"+s,o)}function f(o){const t=\"\"+o+\"\",s=\"\";e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp(t,\"g\"),\"\"),s&&e.removeAttribute(\"data-\"+s)}function r(o){return a.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function d(){if(a.matchMedia&&r(\"\").media!==\"not all\"){for(const o of m)if(r(\":\"+o).matches)return o}return\"light\"}})();\n";
+const script = "\"use strict\";(()=>{const a=window,e=document.documentElement,m=[\"dark\",\"light\"],c=window.localStorage.getItem(\"nuxt-color-mode\")||\"light\";let n=c===\"system\"?f():c;const l=e.getAttribute(\"data-color-mode-forced\");l&&(n=l),i(n),a[\"__NUXT_COLOR_MODE__\"]={preference:c,value:n,getColorScheme:f,addColorScheme:i,removeColorScheme:d};function i(o){const t=\"\"+o+\"\",s=\"\";e.classList?e.classList.add(t):e.className+=\" \"+t,s&&e.setAttribute(\"data-\"+s,o)}function d(o){const t=\"\"+o+\"\",s=\"\";e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp(t,\"g\"),\"\"),s&&e.removeAttribute(\"data-\"+s)}function r(o){return a.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function f(){if(a.matchMedia&&r(\"\").media!==\"not all\"){for(const o of m)if(r(\":\"+o).matches)return o}return\"light\"}})();\n";
 
-const _AChHryNEua = (function(nitro) {
+const _NF3hEWTxzk = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
@@ -831,7 +831,7 @@ const _AChHryNEua = (function(nitro) {
 
 const plugins = [
   _chPr2fL3JP,
-_AChHryNEua
+_NF3hEWTxzk
 ];
 
 function defineRenderHandler(handler) {
@@ -962,15 +962,7 @@ const useShikiHighlighter = createSingleton((opts) => {
         await Promise.all(themeNames.map((theme3) => highlighter.loadTheme(theme3)));
       }
       if (lang && !highlighter.getLoadedLanguages().includes(lang)) {
-        try {
-          await highlighter.loadLanguage(lang);
-        } catch (error) {
-          if (highlights.length) {
-            console.warn("[@nuxtjs/mdc] Defaulting to no language to be able to highlight lines:", error.message);
-            lang = "";
-          } else
-            throw error;
-        }
+        await highlighter.loadLanguage(lang);
       }
       const root = highlighter.codeToHast(code.trimEnd(), {
         lang,
@@ -983,45 +975,16 @@ const useShikiHighlighter = createSingleton((opts) => {
               node.properties.class = (node.properties.class || "") + " highlight";
             }
             node.properties.line = line;
-            if (code?.includes("\n")) {
-              if (node.children.length === 0 || node.children.length === 1 && node.children[0].type === "element" && node.children[0].children.length === 1 && node.children[0].children[0].type === "text" && node.children[0].children[0].value === "") {
-                node.children = [{
-                  type: "element",
-                  tagName: "span",
-                  properties: {
-                    emptyLinePlaceholder: true
-                  },
-                  children: [{ type: "text", value: "\n" }]
-                }];
-                return;
-              }
-              const last = node.children.at(-1);
-              if (last?.type === "element" && last.tagName === "span") {
-                const text = last.children.at(-1);
-                if (text?.type === "text")
-                  text.value += "\n";
-              }
-            }
           }
         }
       });
       const preEl = root.children[0];
       const codeEl = preEl.children[0];
       preEl.properties.style = wrapperStyle ? typeof wrapperStyle === "string" ? wrapperStyle : preEl.properties.style : "";
-      const styles = [];
-      Object.keys(themesObject).forEach((color) => {
+      const style = Object.keys(themesObject).map((color) => {
         const colorScheme = color !== "default" ? `.${color}` : "";
-        styles.push(
-          wrapperStyle ? `${colorScheme} .shiki,` : "",
-          `html .${color} .shiki span {`,
-          `color: var(--shiki-${color});`,
-          `background: var(--shiki-${color}-bg);`,
-          `font-style: var(--shiki-${color}-font-style);`,
-          `font-weight: var(--shiki-${color}-font-weight);`,
-          `text-decoration: var(--shiki-${color}-text-decoration);`,
-          "}"
-        );
-        styles.unshift(
+        return [
+          wrapperStyle ? `html${colorScheme} .shiki,` : "",
           `html${colorScheme} .shiki span {`,
           `color: var(--shiki-${color});`,
           `background: var(--shiki-${color}-bg);`,
@@ -1029,16 +992,16 @@ const useShikiHighlighter = createSingleton((opts) => {
           `font-weight: var(--shiki-${color}-font-weight);`,
           `text-decoration: var(--shiki-${color}-text-decoration);`,
           "}"
-        );
-      });
+        ].join("").trim();
+      }).join("\n");
       return {
         tree: codeEl.children,
         className: preEl.properties.class,
         inlineStyle: preEl.properties.style,
-        style: styles.join("")
+        style
       };
     } catch (error) {
-      console.warn("[@nuxtjs/mdc] Failed to highlight code block:", error.message);
+      console.warn("[@nuxtjs/mdc] Failed to highlight code block", error.message);
       return {
         tree: [{ type: "text", value: code }],
         className: "",
@@ -1072,13 +1035,13 @@ function publicAssetsURL(...path) {
   return path.length ? joinURL(publicBase, ...path) : publicBase;
 }
 
-const _RS1UIy = lazyEventHandler(async () => {
+const _cdrq4C = lazyEventHandler(async () => {
   const { highlight } = useRuntimeConfig().mdc;
   try {
-    const wasm = await import('file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/shikiji/dist/onig.wasm').then((r) => r.default);
+    const wasm = await import('file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/shikiji@0.6.10/node_modules/shikiji/dist/onig.wasm').then((r) => r.default);
     await loadWasm(async (obj) => WebAssembly.instantiate(wasm, obj));
   } catch {
-    await loadWasm({ data: await import('file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/shikiji/dist/wasm.mjs').then((r) => r.getWasmInlined()).then((r) => r.data) });
+    await loadWasm({ data: await import('file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/shikiji@0.6.10/node_modules/shikiji/dist/wasm.mjs').then((r) => r.getWasmInlined()).then((r) => r.data) });
   }
   const shiki = useShikiHighlighter(highlight);
   return eventHandler(async (event) => {
@@ -2828,7 +2791,7 @@ const json = defineTransformer({
     let parsed;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file:///Users/lethimyduyen/Documents/intern/web-emily/node_modules/.pnpm/json5@2.2.3/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr(content);
       }
@@ -3596,7 +3559,7 @@ const _lazy_J4dMfi = () => Promise.resolve().then(function () { return renderer$
 
 const handlers = [
   { route: '/__nuxt_error', handler: _lazy_J4dMfi, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_mdc/highlight', handler: _RS1UIy, lazy: false, middleware: false, method: undefined },
+  { route: '/api/_mdc/highlight', handler: _cdrq4C, lazy: false, middleware: false, method: undefined },
   { route: '/api/_content/query/:qid/**:params', handler: _zXDiIu, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _zXDiIu, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _zXDiIu, lazy: false, middleware: false, method: "get" },

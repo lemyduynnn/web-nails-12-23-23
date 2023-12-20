@@ -20,10 +20,9 @@ export { withContentBase } from '../node_modules/.pnpm/@nuxt+content@2.8.5_vue@3
 export { useUnwrap } from '../node_modules/.pnpm/@nuxt+content@2.8.5_vue@3.3.4/node_modules/@nuxt/content/dist/runtime/composables/useUnwrap';
 export { fetchContentNavigation } from '../node_modules/.pnpm/@nuxt+content@2.8.5_vue@3.3.4/node_modules/@nuxt/content/dist/runtime/legacy/composables/navigation';
 export { useContentState, useContent } from '../node_modules/.pnpm/@nuxt+content@2.8.5_vue@3.3.4/node_modules/@nuxt/content/dist/runtime/composables/content';
-export { flatUnwrap as unwrapSlot } from '../node_modules/@nuxtjs/mdc/dist/runtime/utils/node';
-export { parseMarkdown } from '../node_modules/@nuxtjs/mdc/dist/runtime/parser';
+export { flatUnwrap as unwrapSlot } from '../node_modules/.pnpm/@nuxtjs+mdc@0.2.2/node_modules/@nuxtjs/mdc/dist/runtime/utils/node';
 export { useImage } from '../node_modules/.pnpm/@nuxt+image@1.0.0-rc.3/node_modules/@nuxt/image/dist/runtime/composables';
-export { useColorMode } from '../node_modules/@nuxtjs/color-mode/dist/runtime/composables';
+export { useColorMode } from '../node_modules/.pnpm/@nuxtjs+color-mode@3.3.0/node_modules/@nuxtjs/color-mode/dist/runtime/composables';
 export { useSwiper, useSwiperSlide } from 'swiper/vue';
 export { A11y as SwiperA11y, Autoplay as SwiperAutoplay, Controller as SwiperController, EffectCards as SwiperEffectCards, EffectCoverflow as SwiperEffectCoverflow, EffectCreative as SwiperEffectCreative, EffectCube as SwiperEffectCube, EffectFade as SwiperEffectFade, EffectFlip as SwiperEffectFlip, FreeMode as SwiperFreeMode, Grid as SwiperGrid, HashNavigation as SwiperHashNavigation, History as SwiperHistory, Keyboard as SwiperKeyboard, Manipulation as SwiperManipulation, Mousewheel as SwiperMousewheel, Navigation as SwiperNavigation, Pagination as SwiperPagination, Parallax as SwiperParallax, Scrollbar as SwiperScrollbar, Thumbs as SwiperThumbs, Virtual as SwiperVirtual, Zoom as SwiperZoom } from 'swiper/modules';
 export { useNuxtDevTools } from '../node_modules/.pnpm/@nuxt+devtools@1.0.4_nuxt@3.7.4_vite@4.4.11/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
