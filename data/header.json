@@ -1,0 +1,49 @@
+{
+  "logo": "/images/logo1.png",
+  "image_alt": "Logo",
+  "background": "#f6f7f9",
+  "icon" : [
+    {
+      "nameIcon": "/images/youtube.svg"
+    },
+    {
+      "nameIcon": "/images/facebook.svg"
+    },
+    {
+      "nameIcon": "/images/google.svg"
+    }
+  ],
+  "nav": [
+    {
+      "link": "/",
+      "text": "Home"
+    },
+    {
+      "link": "/#aboutus",
+      "text": "About Us"
+    },
+    {
+      "link": "/#service",
+      "text": "Service"
+    },
+    {
+      "link": "/#gallery",
+      "text": "Gallery"
+    },
+    {
+      "link": "#contact",
+      "text": "Contact"
+    }
+  ],
+  "_inputs": {
+    "logo": {
+      "type": "image"
+    },
+    "background": {
+      "type": "color"
+    },
+    "nameIcon": {
+      "type": "image"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Treatments Section
+  description: Treatments Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+    id: team
+    title: Our Team
+    subtitle: Our Professional Stylist team
+    description: <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    listImage:
+        - image: /images/team3.png
+          image_alt:
+        - image: /images/team2.png
+          image_alt:
+        - image: /images/team1.png
+          image_alt:
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id: 
+    type: text
+    label: ID Section
+  title:
+    type: text
+    label: Title
+  subtitle:
+    type: text
+    label: Subtitle
+  description:
+    type: markdown
+    label: Description
+  image: 
+    type: image
+    label: Image
+  image_alt: 
+    type: text
+    label: Image Alt
+  listImage[*].image:
+    type: image
+    label: Image
+  listImage[*].image_alt:
+    type: text
+    label: Image Alt
+  
