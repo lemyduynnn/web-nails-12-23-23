@@ -23,7 +23,11 @@ export default <Partial<Config>>{
         secondary: 'var(--color-secondary)',
         anchor: 'var(--color-anchor)',
         effects: 'var(--color-effects)'
-      }
+      },
+      aspectRatio: {
+        '3/2': '3 / 2',
+        '9/3': '9 / 3',
+      },
     }
   },
   plugins: [

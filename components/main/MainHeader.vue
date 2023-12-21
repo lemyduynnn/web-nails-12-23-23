@@ -19,7 +19,7 @@
             </ul>
             <ul class="lg:flex items-center h-full header-menu-icon">
               <li v-for="(item, index) in headerData.icon" :key="index+1">
-                <img :src="item.nameIcon"/>
+                <img :src="item.nameIcon" class="cursor-pointer"/>
               </li>
             </ul>
           </div>

@@ -1,0 +1,63 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Service Section
+  description: Service Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  id: service
+  title: Our Service
+  subtitle: What we serve?
+  description: <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+  listTab: 
+    - title_tab: Eyelash
+      num: 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+    - title_tab: Waxing
+      num: 2
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+    - title_tab: Nail Art
+      num: 3
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+    - title_tab: Skin
+      num: 4
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+  image: /images/service.png
+  image_alt:
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id: 
+    type: text
+    label: ID Section
+  title:
+    type: text
+    label: Title
+  subtitle:
+    type: text
+    label: Subtitle
+  description:
+    type: markdown
+    label: Description
+  image: 
+    type: image
+    label: Image
+  image_alt: 
+    type: text
+    label: Image Alt
+  listTab[*].title_tab:
+    type: text
+    label: Title Tab
+  listTab[*].num:
+    type: number
+    label: Number
+  listTab[*].description:
+    type: text
+    label: Description
+  

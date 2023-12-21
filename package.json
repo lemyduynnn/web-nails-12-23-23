@@ -1,6 +1,7 @@
 {
   "name": "web-nails-23-001",
   "private": true,
+  "generate": "newzen fetch-routes-generate && node public/js/fetch-theme-color.js && nuxt generate",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

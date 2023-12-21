@@ -9,39 +9,48 @@
             </div>
             <div class="">
               <ul class="text-white flex gap-6">
-                <li v-for="(menu, index) in block.listMenu" :key="index" class="cursor-pointer p-2 font-[24px] transition-all duration-100 hover:border-b hover:border-white">
-                  <a class="">{{ menu.item }}</a>
+                <li v-for="(menu, index) in block.listMenu" :key="index" @click="handleTabMenu(index)" :class="{ 'border-b border-white': updateActiveMenuItem(index) }" class="whitespace-nowrap cursor-pointer p-2 font-[24px] transition-all duration-100 border-b border-black hover:border-white">
+                  <a>{{ menu.item }}</a>
                 </li>
               </ul>
             </div>
         </div>
         <div class="flex justify-between lg:mt-10 mt-0">
           <swiper
-          :slidesPerView="3"
-          :spaceBetween="30"
-          :pagination="{ clickable: true }"
-          :modules="modules"
-          class="mySwiper"
-          @swiper="onSwiper"
-        >
-        <template v-for="a in 3">
-          <swiper-slide v-for="(image, index) in block.listImage" :key="index" class="flex flex-col">
-              <img :src="image.image" :alt="image.image_alt"/>
+            :slidesPerView="3"
+            :spaceBetween="30"
+            :pagination="{ clickable: true }"
+            :modules="modules"
+            class="mySwiper"
+            @swiper="onSwiper"
+          >
+            <swiper-slide v-for="(image, index) in block.listImage" :key="index">
+              <img :src="image.image" :alt="image.image_alt" class="mb-4"/>
               <div class="flex flex-col gap-2 text-white">
-                  <span class="lg:text-2xl text-base">{{ image.title }}</span>
-                  <span class="lg:text-base text-xs">{{ image.subtitle }}</span>
+                <span class="lg:text-2xl text-base">{{ image.title }}</span>
+                <span class="lg:text-base text-xs">{{ image.subtitle }}</span>
               </div>
             </swiper-slide>
-        </template>
-        </swiper>
+          </swiper>
         </div>
-        <div class="lg:flex hidden flex-col h-full justify-end items-end mt-10">
-          <img src="/images/nextarrow.png" class="cursor-pointer object-cover z-30 w-[62px] bottom-36" @click="nextSlide" />
+        <div class="lg:flex hidden h-full justify-between items-center mt-10">
+          <img
+            :class="{ 'opacity-20 cursor-auto': isFirstSlide }"
+            src="/images/nextarrow.png"
+            class="cursor-pointer object-cover z-30 w-[62px] bottom-36 rotate-180"
+            @click="prevSlide"
+          />
+          <img
+            :class="{ 'opacity-20 cursor-auto': isLastSlide }"
+            src="/images/nextarrow.png"
+            class="cursor-pointer object-cover z-30 w-[62px] bottom-36"
+            @click="nextSlide"
+          />
         </div>
         <div class="w-full h-px bg-white lg:my-16 my-6"></div>
         <div class="flex flex-col justify-center items-center w-full gap-4">
           <div class="flex justify-between lg:w-1/2 w-full items-center">
-            <h4 class="text-3xl font-normal text-white w-1/2">Stay informed with our newsletter.</h4>
+            <h4 class="text-3xl font-normal text-white w-1/2">{{block.infor}}</h4>
             <div class="h-full"><img src="/images/phay.png" class="object-cover"/></div>
           </div>
           <div class="lg:w-1/2 w-full">
@@ -108,48 +117,88 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref, defineProps } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 
 const modules = [];
-const mySwiper = ref(null);
+const mySwiper = ref<any | null>(null);
+const isFirstSlide = ref(false);
+const isLastSlide = ref(false);
 
-const onSwiper = (swiperInstance) => {
+const onSwiper = (swiperInstance: any) => {
   mySwiper.value = swiperInstance;
 };
 
-const nextSlide = () => {
+const updateSlideStatus = () => {
+  isFirstSlide.value = mySwiper.value?.isBeginning;
+  isLastSlide.value = mySwiper.value?.isEnd;
+};
+
+const runMenuItemIndex = (currentSlideIndex: number) => {
+  const slidesTab = 3;
+  return Math.floor(currentSlideIndex / slidesTab);
+};
+
+const updateActiveMenuItem = (index: number) => {
   if (mySwiper.value) {
-    mySwiper.value.slideNext();
+    const activeMenuItemIndex = runMenuItemIndex(mySwiper.value.activeIndex);
+    return index === activeMenuItemIndex;
+  }
+  return false;
+};
+
+
+const handleTabMenu = (index: number) => {
+  if (mySwiper.value) {
+    const targetSlideIndex = index * 3;
+    mySwiper.value.slideTo(targetSlideIndex);
+    updateActiveMenuItem(index);
+    updateSlideStatus();
   }
 };
 
+const prevSlide = () => {
+  if (mySwiper.value) {
+    const runPrevSlide = 3;
+    for (let i = 0; i < runPrevSlide; i++) {
+      mySwiper.value.slidePrev();
+    }
+    updateSlideStatus();
+  }
+};
+const nextSlide = () => {
+  if (mySwiper.value) {
+    const runNextSlide = 3;
+    for (let i = 0; i < runNextSlide; i++) {
+      mySwiper.value.slideNext();
+    }
+    updateSlideStatus();
+  }
+};
 
 interface Props {
   dataBinding: any;
   block: any;
 }
 
+const { dataBinding, block } = defineProps<Props>();
+
 const isOpen = ref(false);
 const countries = ['Eyelash + Full Body Waxing', 'Waxing + Full Body Waxing ($100)', 'Nail Art + Full Body Waxing ($100)'];
 const country = ref(countries[0]);
 
-const listTimeMorning = [];
+const listTimeMorning: string[] = [];
 for (let i = 1; i < 5; i++) {
   listTimeMorning.push(`09:${i}0 am`);
 }
 
-const listTimeAfternoon = [];
+const listTimeAfternoon: string[] = [];
 for (let i = 12; i < 20; i++) {
   listTimeAfternoon.push(`${i}:00 am`);
 }
-
-defineProps<Props>();
 </script>
-
 
 <style lang="scss" scoped>
 .section-gallery {

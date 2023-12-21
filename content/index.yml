@@ -16,7 +16,7 @@ content_blocks:
     id: story
     title: Our Story
     subtitle: Better choice<br/>to create new lifestyle
-    description: <h4>Our Visson</h4><br/><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    description: <h4>Our Visson</h4><br/><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br/><h4>Our Mission</h4><br/><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     image: /images/story.png
     image_alt:
 
@@ -38,6 +38,19 @@ content_blocks:
     title: Our Service
     subtitle: What we serve?
     description: <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+    listTab: 
+      - title_tab: Eyelash
+        num: 1
+        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+      - title_tab: Waxing
+        num: 2
+        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+      - title_tab: Nail Art
+        num: 3
+        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+      - title_tab: Skin
+        num: 4
+        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
     image: /images/service.png
     image_alt:
 
@@ -45,6 +58,7 @@ content_blocks:
     id: gallery
     title: Our Gallery
     subtitle: Better choice<br/>to create new lifestyle
+    infor: Stay informed with our newsletter.
     listMenu:
       - item: Eyelash
       - item: Waxing
@@ -63,9 +77,56 @@ content_blocks:
         title: Eyelash
         subtitle: Designed by Roxy
         image_alt:
+      - image: /images/gallery1.png
+        title: Eyelash
+        subtitle: Designed by Roxy
+        image_alt:
+      - image: /images/gallery2.png
+        title: Eyelash
+        subtitle: Designed by Roxy
+        image_alt:
+      - image: /images/gallery3.png
+        title: Eyelash
+        subtitle: Designed by Roxy
+        image_alt:
+      - image: /images/gallery1.png
+        title: Eyelash
+        subtitle: Designed by Roxy
+        image_alt:
+      - image: /images/gallery2.png
+        title: Eyelash
+        subtitle: Designed by Roxy
+        image_alt:
+      - image: /images/gallery3.png
+        title: Eyelash
+        subtitle: Designed by Roxy
+        image_alt:
+      - image: /images/gallery1.png
+        title: Eyelash
+        subtitle: Designed by Roxy
+        image_alt:
+      - image: /images/gallery2.png
+        title: Eyelash
+        subtitle: Designed by Roxy
+        image_alt:
+      - image: /images/gallery3.png
+        title: Eyelash
+        subtitle: Designed by Roxy
+        image_alt:
 
   - _block_name: section/contact
     id: contact
     title: Contact
     subtitle: We are ready to serve. Just say hello and you'll be assisted immediately
+    phone: +1 234 456 0099
+    address: 11011 Richmond Ave, Houston
+    email: contact@fastboy.net
+    input_contact:
+      - lable: name
+        placeholder: Enter your name
+      - lable: email
+        placeholder: Enter your email
+      - lable: phone
+        placeholder: Enter your phone
+    button: submit
 

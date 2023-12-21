@@ -15,7 +15,6 @@
             <img :src="block.image" alt="story video" class="w-[646px] h-[450px] flex-shrink object-cover">
             <div class="flex flex-col lg:py-0 py-10">
               <div v-html="block.description" class="mb-6 text-lg font-normal leading-normal"></div>
-              <div v-html="block.description" class="text-lg font-normal leading-normal"></div>
             </div>
         </div>
         <div class="hidden lg:block w-[70px] h-auto absolute bottom-0 left-10">

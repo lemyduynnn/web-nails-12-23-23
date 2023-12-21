@@ -16,10 +16,10 @@
           </div>
           <div class="image-container flex flex-col">
             <div v-for="(img, index) in block.listImage" :key="index">
-              <img :src="img.image" :alt="img.image_alt" class="w-full flex-shrink object-cover relative">
+              <img :src="img.image" :alt="img.image_alt" class="w-full flex-shrink object-cover relative aspect-[3/2]">
             </div>
             <div class="flex flex-col w-full justify-end items-start mt-16">
-              <img src="/images/nextarrow.png" class="object-cover z-30" />
+              <img src="/images/nextarrow.png" class="object-cover z-30 cursor-pointer" />
             </div>
           </div>
         </div>
@@ -40,24 +40,25 @@ defineProps<Props>()
 <style lang="scss" scoped>
 .section-team {
   .image-container {
+    height: 100%;
     img {
       max-width: 560px;
       max-height: 370px;
     }
     :nth-child(2) {
       position: absolute;
-      margin-top: 20px;
-      margin-left: 20px;
       img {
         z-index: 2;
+        top: 20px;
+        left: 20px;
       }
     }
     :nth-child(3) {
       position: absolute;
-      margin-top: 40px;
-      margin-left: 40px;
       img {
         z-index: 3;
+        top: 40px;
+        left: 40px;
       }
     }
   }

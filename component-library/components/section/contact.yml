@@ -1,0 +1,58 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Contact Section
+  description: Contact Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  id: contact
+  title: Contact
+  subtitle: We are ready to serve. Just say hello and you'll be assisted immediately
+  phone: +1 234 456 0099
+  address: 11011 Richmond Ave, Houston
+  email: contact@fastboy.net
+  input_contact:
+    - lable: name
+      placeholder: Enter your name
+    - lable: email
+      placeholder: Enter your email
+    - lable: phone
+      placeholder: Enter your phone
+  button: submit
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id: 
+    type: text
+    label: ID Section
+  title:
+    type: text
+    label: Title
+  subtitle:
+    type: text
+    label: Subtitle
+  phone:
+    type: text
+    label: Phone
+  address:
+    type: text
+    label: Address
+  email:
+    type: text
+    label: Email
+  input_contact[*].lable:
+    type: text
+    label: Lable Input
+  listTab[*].placeholder:
+    type: text
+    label: Placeholder Input
+  button:
+    type: text
+    label: Button
+  

@@ -2,23 +2,22 @@
 spec:
   structures:
     - content_blocks
-  label: Team Section
-  description: Team Section
+  label: Banner Section
+  description: Banner Section
   icon: "cottage"
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-    id: team
-    title: Our Team
-    subtitle: Our Professional Stylist team
+    id: section-banner
+    title: Create a different,<br/>confident lifestyle.
     description: <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-    listImage:
-        - image: /images/team3.png
-          image_alt:
-        - image: /images/team2.png
-          image_alt:
-        - image: /images/team1.png
-          image_alt:
+    banners:
+      - image: /images/banner1.png
+        image_alt:
+      - image: /images/banner2.png
+        image_alt:
+      - image: /images/banner3.png
+        image_alt:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -31,9 +30,6 @@ _inputs:
   title:
     type: text
     label: Title
-  subtitle:
-    type: text
-    label: Subtitle
   description:
     type: markdown
     label: Description
@@ -43,10 +39,10 @@ _inputs:
   image_alt: 
     type: text
     label: Image Alt
-  listImage[*].image:
+  banners[*].image:
     type: image
     label: Image
-  listImage[*].image_alt:
+  banners[*].image_alt:
     type: text
     label: Image Alt
   

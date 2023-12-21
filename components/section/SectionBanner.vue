@@ -4,7 +4,7 @@
         <div class="flex flex-col justify-center items-center">
           <div class="image-container flex flex-col">
             <div v-for="(img, index) in block.banners" :key="index">
-              <img :src="img.image" :alt="img.image_alt" class="w-full flex-shrink object-cover relative">
+              <img :src="img.image" :alt="img.image_alt" class="w-full flex-shrink object-cover relative aspect-[9/3]">
             </div>
           </div>
         </div>
@@ -14,7 +14,7 @@
               <img src="/images/tron.png" class="w-6 h-6"/>
               <img src="/images/tron.png" class="w-6 h-6"/>
             </div>
-            <img src="/images/nextblack.png" class="object-cover z-50" />
+            <img src="/images/nextblack.png" class="cursor-pointer object-cover z-50" />
         </div>
         <div class="h-full text-center lg:gap-10 gap-6 flex flex-col justify-center items-center my-10">
             <div class="font-bold lg:text-6xl text-3xl z-50" v-html="block.title"></div>
@@ -36,24 +36,25 @@ defineProps<Props>()
 <style lang="scss" scoped>
 .section-banner {
   .image-container {
+    height: 100%;
     img {
       max-width: 900px;
       max-height: 300px;
     }
     :nth-child(2) {
       position: absolute;
-      margin-top: 20px;
-      margin-left: 20px;
       img {
         z-index: 2;
+        top: 20px;
+        left: 20px;
       }
     }
     :nth-child(3) {
       position: absolute;
-      margin-top: 40px;
-      margin-left: 40px;
       img {
         z-index: 3;
+        top: 40px;
+        left: 40px;
       }
     }
   }
