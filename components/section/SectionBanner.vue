@@ -2,9 +2,9 @@
   <section :id="block.id" class="section-banner w-full h-auto bg-gray-200 lg:py-16 py-10" :data-cms-bind="dataBinding">
     <div class="container">
         <div class="flex flex-col justify-center items-center">
-          <div class="image-container flex flex-col">
+          <div class="image-container flex flex-col justify-center items-center">
             <div v-for="(img, index) in block.banners" :key="index">
-              <img :src="img.image" :alt="img.image_alt" class="w-full flex-shrink object-cover relative aspect-[9/3]">
+              <img :src="img.image" :alt="img.image_alt" class="flex-shrink object-cover aspect-[9/3]">
             </div>
           </div>
         </div>
@@ -36,26 +36,27 @@ defineProps<Props>()
 <style lang="scss" scoped>
 .section-banner {
   .image-container {
-    height: 100%;
+    position: relative;
     img {
       max-width: 900px;
       max-height: 300px;
     }
+    :nth-child(1) {
+      position: relative;
+      padding-right: 10px;
+      width: 100%;
+    }
     :nth-child(2) {
       position: absolute;
-      img {
-        z-index: 2;
-        top: 20px;
-        left: 20px;
-      }
+      z-index: 2;
+      top: 20px;
+      left: 20px;
     }
     :nth-child(3) {
       position: absolute;
-      img {
-        z-index: 3;
-        top: 40px;
-        left: 40px;
-      }
+      z-index: 3;
+      top: 40px;
+      left: 40px;
     }
   }
 }

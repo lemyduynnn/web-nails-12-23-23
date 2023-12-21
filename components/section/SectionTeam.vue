@@ -16,7 +16,7 @@
           </div>
           <div class="image-container flex flex-col">
             <div v-for="(img, index) in block.listImage" :key="index">
-              <img :src="img.image" :alt="img.image_alt" class="w-full flex-shrink object-cover relative aspect-[3/2]">
+              <img :src="img.image" :alt="img.image_alt" class="w-full flex-shrink object-cover aspect-[3/2]">
             </div>
             <div class="flex flex-col w-full justify-end items-start mt-16">
               <img src="/images/nextarrow.png" class="object-cover z-30 cursor-pointer" />
@@ -41,25 +41,27 @@ defineProps<Props>()
 .section-team {
   .image-container {
     height: 100%;
+    width: 100%;
+    position: relative;
     img {
       max-width: 560px;
       max-height: 370px;
     }
+    :nth-child(1) {
+      position: relative;
+      padding-right: 10px;
+    }
     :nth-child(2) {
       position: absolute;
-      img {
-        z-index: 2;
-        top: 20px;
-        left: 20px;
-      }
+      z-index: 2;
+      top: 20px;
+      left: 20px;
     }
     :nth-child(3) {
       position: absolute;
-      img {
-        z-index: 3;
-        top: 40px;
-        left: 40px;
-      }
+      z-index: 3;
+      top: 40px;
+      left: 40px;
     }
   }
 }
