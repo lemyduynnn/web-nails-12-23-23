@@ -1,5 +1,6 @@
 <template>
-  <section :id="block.id" :data-cms-bind="dataBinding" class="section-story bg-black w-full lg:rounded-tr-[100px] rounded-none">
+  <section :id="block.id" :data-cms-bind="dataBinding" class="section-story bg-gray-200">
+  <div class=" bg-black w-full lg:rounded-tr-[100px] rounded-none">
     <div class="container h-full">
       <div class="h-full flex flex-col gap-4 lg:py-16 py-6 relative">
         <div class="lg:flex justify-between items-end">
@@ -54,11 +55,11 @@
             <div class="h-full"><img src="/images/phay.png" class="object-cover"/></div>
           </div>
           <div class="lg:w-1/2 w-full">
-            <button @click="isOpen = true" class="transition hover:opacity-90 hover:transition-all hidden lg:block uppercase bg-white text-black p-2 w-full rounded font-medium">Booking now</button>
+            <button @click="isOpen = true" class="transition hover:opacity-90 hover:transition-all hidden lg:block uppercase bg-white text-black p-2 w-full rounded font-medium">{{ block.button_booking[0].button_desktop }}</button>
             <div class="flex items-center justify-between lg:hidden w-full">
               <div class="relative flex-grow border-solid border-4 rounded-lg border-white">
                 <input type="text" class="mr-2 bg-white w-full p-4 pl-4" placeholder="Enter your mail">
-                <button @click="isOpen = true" class="transition hover:opacity-80 hover:transition-all rounded-lg uppercase absolute inset-y-0 right-0 h-full bg-black text-white p-4">Subcribe now</button>
+                <button @click="isOpen = true" class="transition hover:opacity-80 hover:transition-all rounded-lg uppercase absolute inset-y-0 right-0 h-full bg-black text-white p-4">{{ block.button_booking[1].button_mobile }}</button>
               </div>
             </div>
           </div>
@@ -68,7 +69,7 @@
           <UModal v-model="isOpen" id="custom-modal" class="h-full">
             <div class="p-4 text-white grid lg:grid-cols-2 grid-cols-1 gap-4 text-xs h-full">
               <div class="flex flex-col gap-2">
-                <h4 class="font-medium text-xl mb-2">BOOKING AN APPOINTMENT</h4>
+                <h4 class="font-medium text-xl mb-2">{{ block.title_modal }}</h4>
                 <div class="flex gap-2">
                   <input type="date" class="custom-input border-none p-2 text-white bg-[#0E0E0E] rounded"/>
                   <USelect v-model="country" :options="countries" id="custom-select"/>
@@ -78,7 +79,7 @@
                 </div>
                 <div class="flex flex-col gap-2 text-xs">
                   <div class="flex gap-4 justify-start items-center">
-                    <h4>Morning</h4>
+                    <h4>{{ block.time[0].morning }}</h4>
                     <div class="h-px w-20 bg-white"></div>
                   </div>
                   <div class="flex gap-4">
@@ -87,7 +88,7 @@
                 </div>
                 <div class="flex flex-col gap-2 text-xs">
                   <div class="flex gap-4 justify-start items-center">
-                    <h4>Afternoon</h4>
+                    <h4>{{ block.time[1].afternoon }}</h4>
                     <div class="h-px w-20 bg-white"></div>
                   </div>
                   <div class="grid grid-cols-4 gap-2">
@@ -96,16 +97,16 @@
                 </div>
               </div>
               <div class="flex flex-col gap-2">
-                <h4 class="font-medium text-xl mb-2">YOUR INFORMATION</h4>
+                <h4 class="font-medium text-xl mb-2">{{block.title_infor_update}}</h4>
                 <div class="flex gap-2">
-                  <div class="border-[0.5px] text-white rounded p-2">Thursday 10-26-2023</div>
-                  <div class="text-black bg-white rounded p-2">16:30</div>
+                  <div class="border-[0.5px] text-white rounded p-2">{{ block.date_infor_update }}</div>
+                  <div class="text-black bg-white rounded p-2">{{ block.time_infor_update }}</div>
                 </div>
                 <div class="flex flex-col h-full w-full gap-2 text-xs">
                   <input type="text" class="p-2 bg-white text-black rounded" placeholder="Your name ( Required )"/>                 
                   <input type="text" class="p-2 bg-white text-black rounded" placeholder="Your phone ( Required )"/>                 
                   <textarea type="textarea" rows="6" cols="50" class="p-2 bg-white text-black rounded" placeholder="Note ( Optional ) (Max length 200 character)"/>               
-                  <button class="transition hover:opacity-80 hover:bg-black hover:transition-all border-[0.5px] text-white rounded p-2">CONFIRM APPOINTMENT</button>
+                  <button class="transition hover:opacity-80 hover:bg-black hover:transition-all border-[0.5px] text-white rounded p-2">{{ block.button_update }}</button>
               </div>
               </div>
             </div>
@@ -113,6 +114,7 @@
         </div>
       </div>
     </div> 
+  </div>
   </section>
 </template>
 
@@ -179,8 +181,8 @@ const nextSlide = () => {
 };
 
 interface Props {
-  dataBinding: string;
-  block: string;
+  dataBinding: any;
+  block: any;
 }
 
 const { dataBinding, block } = defineProps<Props>();

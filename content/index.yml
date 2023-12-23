@@ -38,19 +38,19 @@ content_blocks:
     title: Our Service
     subtitle: What we serve?
     description: <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-    listTab: 
+    listTab:
       - title_tab: Eyelash
         num: 1
-        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and
       - title_tab: Waxing
         num: 2
-        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and
       - title_tab: Nail Art
         num: 3
-        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and
       - title_tab: Skin
         num: 4
-        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
+        description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and
     image: /images/service.png
     image_alt:
 
@@ -59,6 +59,17 @@ content_blocks:
     title: Our Gallery
     subtitle: Better choice<br/>to create new lifestyle
     infor: Stay informed with our newsletter.
+    button_booking:
+      - button_desktop: Booking now
+      - button_mobile: Subcribe now
+    time:
+      - morning: Morning
+      - afternoon: Afternoon
+    title_infor_update: YOUR INFORMATION
+    date_infor_update: Thursday 10-26-2023
+    time_infor_update: 16:30
+    button_update: CONFIRM APPOINTMENT
+    title_modal: BOOKING AN APPOINTMENT
     listMenu:
       - item: Eyelash
       - item: Waxing
@@ -130,3 +141,6 @@ content_blocks:
         placeholder: Enter your phone
     button: submit
 
+  - _block_name: section/editor
+    id: editor
+    title: Editor

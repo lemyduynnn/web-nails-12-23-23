@@ -1,5 +1,6 @@
 <template>
-  <section :id="block.id" :data-cms-bind="dataBinding" class="section-story bg-black w-full lg:rounded-tr-[100px] rounded-none">
+  <section :id="block.id" :data-cms-bind="dataBinding" class="section-story bg-gray-200">
+   <div class="bg-black w-full lg:rounded-tr-[100px] rounded-none">
     <div class="container h-full">
       <div class="h-full flex flex-col gap-10 lg:py-16 py-6 relative">
         <div class="grid grid-cols-2">
@@ -22,7 +23,7 @@
         </div>
       </div>
     </div>
-    
+  </div>
   </section>
 </template>
 

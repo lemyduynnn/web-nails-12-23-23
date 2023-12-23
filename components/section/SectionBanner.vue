@@ -3,9 +3,9 @@
     <div class="container">
         <div class="flex flex-col justify-center items-center">
           <div class="image-container">
-            <div v-for="(img, index) in block.banners" :key="index" :class="{ 'transition delay-200 duration-300 opacity-70': index !== currentImageIndex, 'opacity-100': index === currentImageIndex }">
-                <img :src="img.image" :alt="img.image_alt" class="flex-shrink object-cover aspect-[9/3] transition-opacity duration-500" />
-              </div>
+            <div v-for="(img, index) in block.banners" :key="index">
+                <img :src="img.image" :alt="img.image_alt" class="flex-shrink object-cover aspect-[9/3]" />
+            </div>
           </div>
         </div>
         <div class="flex lg:flex-col justify-between items-center lg:items-end lg:px-20 mt-16 lg:mt-0">
@@ -26,18 +26,17 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
 
 interface Props {
   dataBinding: any;
   block: any;
 }
 
-const currentImageIndex = ref(2);
-
-const handleNextClick = (listImg: string) => {
-  currentImageIndex.value = (currentImageIndex.value + 1) % listImg.length;
-  console.log(currentImageIndex);
+const handleNextClick = (listImg: any) => {
+  if (listImg.length >= 2) {
+    const lastImage = listImg.pop();
+    listImg.unshift(lastImage);
+  }
   return listImg;
 };
 

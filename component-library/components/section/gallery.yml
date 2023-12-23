@@ -12,6 +12,17 @@ blueprint:
   title: Our Gallery
   subtitle: Better choice<br/>to create new lifestyle
   infor: Stay informed with our newsletter.
+  button_booking:
+    - button_desktop: Booking now
+    - button_mobile: Subcribe now
+  time:
+    - morning: Morning
+    - afternoon: Afternoon
+  title_infor_update: YOUR INFORMATION
+  date_infor_update: Thursday 10-26-2023
+  time_infor_update: 16:30
+  button_update: CONFIRM APPOINTMENT
+  title_modal: BOOKING AN APPOINTMENT
   listMenu:
     - item: Eyelash
     - item: Waxing
@@ -72,7 +83,7 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  id: 
+  id:
     type: text
     label: ID Section
   title:
@@ -99,4 +110,30 @@ _inputs:
   listImage[*].subtitle:
     type: text
     label: Subtitle Image
-  
+  button_booking[*].button_desktop:
+    type: text
+    label: Title Button Desktop
+  button_booking[*].button_mobile:
+    type: text
+    label: Title Button Mobile
+  time[*].morning:
+    type: text
+    label: Title Time
+  time[*].afternoon:
+    type: text
+    label: Title Time
+  title_infor_update:
+    type: text
+    label: Title Infor Update 
+  date_infor_update:
+    type: text
+    label: Date Infor Update 
+  time_infor_update:
+    type: number
+    label: Time Infor Update
+  button_update:
+    type: text
+    label: Button Update
+  title_modal:
+    type: text
+    label: Title Modal
