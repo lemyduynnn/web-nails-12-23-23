@@ -1,11 +1,10 @@
 {
   "name": "web-nails-23-001",
   "private": true,
-  "generate": "newzen fetch-routes-generate && node public/js/fetch-theme-color.js && nuxt generate",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "node public/js/fetch-routes-generate.js && node public/js/fetch-theme-color.js && nuxt generate",
+    "generate": "newzen fetch-routes-generate && node public/js/fetch-theme-color.js && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint . --ext .vue,.js,.ts --ignore-path .gitignore",
@@ -34,7 +33,7 @@
     "@nuxt/image": "1.0.0-rc.3",
     "@nuxt/ui": "^2.9.0",
     "dayjs": "^1.11.10",
-    "newzen-connector": "~1.0.5",
+    "newzen-connector": "~1.0.8",
     "node-fetch": "^3.3.2",
     "nuxt-swiper": "^1.2.2",
     "require-polyfills": "^1.0.1",
