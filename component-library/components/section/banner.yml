@@ -18,6 +18,9 @@ blueprint:
         image_alt:
       - image: /images/banner3.png
         image_alt:
+    button: About Us
+    background: '#F0F0F0'
+
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -45,4 +48,7 @@ _inputs:
   banners[*].image_alt:
     type: text
     label: Image Alt
+  background:
+    type: color
+    label: Color Background
   

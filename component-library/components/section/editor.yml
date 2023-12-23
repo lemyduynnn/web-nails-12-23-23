@@ -8,7 +8,10 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
- 
+  id: editor
+  title: Editor
+  content:
+  background: '#000'
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -21,5 +24,11 @@ _inputs:
   title:
     type: text
     label: Title
+  content:
+    type: markdown
+    label: Title
+  background:
+    type: color
+    label: Color Background
  
   

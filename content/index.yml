@@ -11,6 +11,8 @@ content_blocks:
         image_alt:
       - image: /images/banner3.png
         image_alt:
+    button: About Us
+    background: '#F0F0F0'
 
   - _block_name: section/story
     id: story
@@ -19,6 +21,7 @@ content_blocks:
     description: <h4>Our Visson</h4><br/><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br/><h4>Our Mission</h4><br/><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     image: /images/story.png
     image_alt:
+    background: "#F0F0F0"
 
   - _block_name: section/team
     id: team
@@ -32,6 +35,7 @@ content_blocks:
         image_alt:
       - image: /images/team1.png
         image_alt:
+    background: "#F0F0F0"
 
   - _block_name: section/service
     id: service
@@ -53,6 +57,7 @@ content_blocks:
         description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and
     image: /images/service.png
     image_alt:
+    background: "#F0F0F0"
 
   - _block_name: section/gallery
     id: gallery
@@ -70,6 +75,7 @@ content_blocks:
     time_infor_update: 16:30
     button_update: CONFIRM APPOINTMENT
     title_modal: BOOKING AN APPOINTMENT
+    background: "#F0F0F0"
     listMenu:
       - item: Eyelash
       - item: Waxing
@@ -140,7 +146,10 @@ content_blocks:
       - lable: phone
         placeholder: Enter your phone
     button: submit
+    background: '#000'
 
   - _block_name: section/editor
     id: editor
     title: Editor
+    background: '#000'
+    content: 

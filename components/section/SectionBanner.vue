@@ -1,5 +1,5 @@
 <template>
-  <section :id="block.id" class="section-banner w-full h-auto bg-gray-200 lg:py-16 py-10" :data-cms-bind="dataBinding">
+  <section :id="block.id" :style="{ background: block.background}" class="section-banner w-full h-auto lg:py-16 py-10" :data-cms-bind="dataBinding">
     <div class="container">
         <div class="flex flex-col justify-center items-center">
           <div class="image-container">
@@ -19,7 +19,7 @@
         <div class="h-full text-center lg:gap-10 gap-6 flex flex-col justify-center items-center my-10">
             <div class="font-bold lg:text-6xl text-3xl z-50" v-html="block.title"></div>
             <div class="font-medium leading-normal z-50 lg:w-2/3 w-full" v-html="block.description"></div>
-            <button class="transition hover:opacity-80 hover:transition-all z-50 border-none bg-black text-white lg:w-80 uppercase w-full h-12 rounded-lg">About Us</button>
+            <button class="transition hover:opacity-80 hover:transition-all z-50 border-none bg-main text-secondary lg:w-80 uppercase w-full h-12 rounded-lg">{{ block.button}}</button>
         </div>
     </div>
   </section>
@@ -33,7 +33,7 @@ interface Props {
 }
 
 const handleNextClick = (listImg: any) => {
-  if (listImg.length >= 2) {
+  if (listImg.length >= 1) {
     const lastImage = listImg.pop();
     listImg.unshift(lastImage);
   }

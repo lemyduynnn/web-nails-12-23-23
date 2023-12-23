@@ -1,5 +1,5 @@
 <template>
-  <section :id="block.id" class="py-[50px] bg-black" :data-cms-bind="dataBinding">
+  <section :id="block.id" :style="{ background: block.background }" class="py-[50px]" :data-cms-bind="dataBinding">
     <div class="container">
       <!-- eslint-disable -->
       <div v-html="block.content"/>

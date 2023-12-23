@@ -19,6 +19,7 @@ blueprint:
           image_alt:
         - image: /images/team1.png
           image_alt:
+    background: "#F0F0F0"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -49,4 +50,8 @@ _inputs:
   listImage[*].image_alt:
     type: text
     label: Image Alt
+  background:
+    type: color
+    label: Color Background
+
   

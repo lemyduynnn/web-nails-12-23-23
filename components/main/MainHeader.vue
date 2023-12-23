@@ -1,6 +1,6 @@
 <template>
-  <header :style="{ background: headerData.background }" class="text-black sticky top-0 z-[99999] h-[84px]">
-    <div class="container h-full" style="background-color: #ffff;">
+  <header :style="{ background: headerData.background }" class="text-main sticky top-0 z-[99999] h-[84px]">
+    <div class="container h-full" :style="{ background: headerData.background }">
       <div class="h-full">
         <nav class="flex items-center gap-[30px] justify-between h-full">
           <div>

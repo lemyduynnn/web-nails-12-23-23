@@ -77,6 +77,7 @@ blueprint:
       title: Eyelash
       subtitle: Designed by Roxy
       image_alt:
+  background: "#F0F0F0"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -124,10 +125,10 @@ _inputs:
     label: Title Time
   title_infor_update:
     type: text
-    label: Title Infor Update 
+    label: Title Infor Update
   date_infor_update:
     type: text
-    label: Date Infor Update 
+    label: Date Infor Update
   time_infor_update:
     type: number
     label: Time Infor Update
@@ -137,3 +138,6 @@ _inputs:
   title_modal:
     type: text
     label: Title Modal
+  background:
+    type: color
+    label: Color Background

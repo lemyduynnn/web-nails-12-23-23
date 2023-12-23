@@ -1,7 +1,7 @@
 {
   "logo": "/images/logo1.png",
   "image_alt": "Logo",
-  "background": "#f6f7f9",
+  "background": "#FFFFFF",
   "icon" : [
     {
       "nameIcon": "/images/youtube.svg"

@@ -13,12 +13,17 @@
       "nameIcon": "/images/ins.png"
     }
   ],
+  "background":"#000",
+
   "_inputs": {
     "logo": {
       "type": "image"
     },
     "nameIcon": {
       "tyle":"image"
+    },
+    "background": {
+      "tyle":"color"
     }
   }
 }

@@ -1,10 +1,10 @@
 <template>
-  <section :id="block.id" :data-cms-bind="dataBinding" class="section-story bg-gray-200">
-   <div class="bg-black w-full lg:rounded-tr-[100px] rounded-none">
+  <section :id="block.id" :style="{ background: block.background }" :data-cms-bind="dataBinding" class="section-story">
+   <div class="bg-main w-full lg:rounded-tr-[100px] rounded-none">
     <div class="container h-full">
       <div class="h-full flex flex-col gap-10 lg:py-16 py-6 relative">
         <div class="grid grid-cols-2">
-            <div class="text-white">
+            <div class="text-secondary">
                 <h4 class="text-[14px] leading-normal font-semibold uppercase">{{ block.title }}</h4>
                 <h1 class="text-[56px] leading-[60px] font-normal mt-4" v-html="block.subtitle"></h1>
             </div>
@@ -12,7 +12,7 @@
               <img src="/images/dot.png" class="object-cover"/>
             </div>
         </div>
-        <div class="lg:flex block gap-14 text-white">
+        <div class="lg:flex block gap-14 text-secondary">
             <img :src="block.image" alt="story video" class="w-[646px] h-[450px] flex-shrink object-cover">
             <div class="flex flex-col lg:py-0 py-10">
               <div v-html="block.description" class="mb-6 text-lg font-normal leading-normal"></div>

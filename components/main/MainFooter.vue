@@ -1,8 +1,8 @@
 <template>
-  <footer id="footer" class="bg-black">
+  <footer id="footer" :style="{ background: footerData?.background }">
     <div class="container">
       <div class="lg:grid lg:grid-cols-3 flex flex-col-reverse gap-6 lg:py-16 py-6">
-        <div class="flex flex-col gap-2 text-white">
+        <div class="flex flex-col gap-2 text-secondary">
           <span class="font-medium leading-normal">{{ footerData?.resonance }}</span>
           <span class="italic">{{ footerData?.author }}</span>
         </div>

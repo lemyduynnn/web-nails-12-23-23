@@ -14,6 +14,7 @@ blueprint:
     description: <h4>Our Visson</h4><br/><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br/><br/><h4>Our Visson</h4><br/><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     image: /images/story.png
     image_alt:
+    background: "#F0F0F0"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -38,4 +39,6 @@ _inputs:
   image_alt: 
     type: text
     label: Image Alt
-  
+  background:
+    type: color
+    label: Color Background

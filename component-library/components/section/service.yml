@@ -27,6 +27,7 @@ blueprint:
       description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
   image: /images/service.png
   image_alt:
+  background: "#F0F0F0"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -60,4 +61,7 @@ _inputs:
   listTab[*].description:
     type: text
     label: Description
+  background:
+    type: color
+    label: Color Background
   
