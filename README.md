@@ -1,4 +1,3 @@
-# Welcome to web-nails-23-001 👋
 
 ## Project setup
 

@@ -123,11 +123,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const modules = [];
-const mySwiper = ref<string | null>(null);
+const mySwiper = ref<any | null>(null);
 const isFirstSlide = ref(false);
 const isLastSlide = ref(false);
 
-const onSwiper = (swiperInstance: string) => {
+const onSwiper = (swiperInstance: any) => {
   mySwiper.value = swiperInstance;
 };
 

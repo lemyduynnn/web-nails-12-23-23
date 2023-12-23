@@ -29,8 +29,8 @@
 import { ref } from 'vue';
 
 interface Props {
-  dataBinding: string;
-  block: string;
+  dataBinding: any;
+  block: any;
 }
 
 const currentImageIndex = ref(2);
