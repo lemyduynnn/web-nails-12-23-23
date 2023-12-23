@@ -41,8 +41,8 @@
 
 <script lang="ts" setup>
 interface Props {
-  dataBinding: any;
-  block: any;
+  dataBinding: string;
+  block: string;
 }
 
 defineProps<Props>()

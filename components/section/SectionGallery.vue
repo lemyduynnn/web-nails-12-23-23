@@ -123,11 +123,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const modules = [];
-const mySwiper = ref<any | null>(null);
+const mySwiper = ref<string | null>(null);
 const isFirstSlide = ref(false);
 const isLastSlide = ref(false);
 
-const onSwiper = (swiperInstance: any) => {
+const onSwiper = (swiperInstance: string) => {
   mySwiper.value = swiperInstance;
 };
 
@@ -179,8 +179,8 @@ const nextSlide = () => {
 };
 
 interface Props {
-  dataBinding: any;
-  block: any;
+  dataBinding: string;
+  block: string;
 }
 
 const { dataBinding, block } = defineProps<Props>();

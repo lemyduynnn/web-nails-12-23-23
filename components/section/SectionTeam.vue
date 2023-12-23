@@ -15,11 +15,11 @@
             <img src="/images/dot.png" class="h-auto w-[70px] mt-10 object-cover hidden lg:block"/>
           </div>
           <div class="image-container flex flex-col">
-            <div v-for="(img, index) in block.listImage" :key="index">
-              <img :src="img.image" :alt="img.image_alt" class="w-full flex-shrink object-cover aspect-[3/2]">
+            <div v-for="(img, index) in block.listImage" :key="index" :class="{ 'transition delay-200 duration-300 opacity-70': index !== currentImageIndex, 'opacity-100': index === currentImageIndex }">
+                <img :src="img.image" :alt="img.image_alt" class="flex-shrink object-cover aspect-[3/2] transition-opacity duration-500" />
             </div>
             <div class="flex flex-col w-full justify-end items-start mt-16">
-              <img src="/images/nextarrow.png" class="object-cover z-30 cursor-pointer" />
+              <img src="/images/nextarrow.png" class="object-cover z-30 cursor-pointer"  @click="handleNextClick(block.listImage)" />
             </div>
           </div>
         </div>
@@ -29,10 +29,20 @@
 </template>
 
 <script lang="ts" setup>
+import { ref } from 'vue';
+
 interface Props {
-  dataBinding: any;
-  block: any;
+  dataBinding: string;
+  block: string;
 }
+
+const currentImageIndex = ref(2);
+
+const handleNextClick = (listImg: string) => {
+  currentImageIndex.value = (currentImageIndex.value + 1) % listImg.length;
+  console.log(currentImageIndex);
+  return listImg;
+};
 
 defineProps<Props>()
 </script>

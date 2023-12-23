@@ -17,6 +17,8 @@
 <script lang="ts" setup>
 import NewzenConnector from 'newzen-connector';
 import 'newzen-connector/dist/style.css';
+import { useRoute  } from 'vue-router';
+import { ref,onMounted  } from 'vue';
 
 const route = useRoute();
 const { page } = useContent();
@@ -31,7 +33,7 @@ useHead(head);
 
 const formattedPage = ref(pageData.content_blocks ? NewzenConnector.formatContentBlock(pageData) : {});
 
-const newzenCallback = (_formattedPage: any) => {
+const newzenCallback = (_formattedPage: string) => {
   formattedPage.value = _formattedPage;
 }
 

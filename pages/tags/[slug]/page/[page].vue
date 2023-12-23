@@ -11,6 +11,8 @@
 
 <script lang="ts" setup>
 import { DEFAULT_PAGE_SIZE } from '@/constant';
+import { useRoute  } from 'vue-router';
+
 
 const route = useRoute();
 const currentPage = +route.params.page;

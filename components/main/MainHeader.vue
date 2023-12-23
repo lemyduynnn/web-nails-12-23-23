@@ -60,6 +60,8 @@
 
 <script setup lang="ts">
 import headerData from '@/data/header.json';
+import { ref,watch  } from 'vue';
+import { useRoute  } from 'vue-router';
 
 const isOpen = ref(false)
 const route = useRoute();

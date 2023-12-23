@@ -23,7 +23,7 @@ interface Props {
     image: string
     image_alt: string
   }
-  dataBinding?: any
+  dataBinding?: string
 }
 
 defineProps<Props>();

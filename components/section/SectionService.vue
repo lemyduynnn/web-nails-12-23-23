@@ -49,8 +49,8 @@
 import { ref } from 'vue';
 
 interface Props {
-  dataBinding: any;
-  block: any;
+  dataBinding: string;
+  block: string;
 }
 
 const activeTab = ref(1);
