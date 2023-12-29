@@ -1,6 +1,6 @@
 {
     "BaseURL": "http://example.org",
-    "site_title": "Emily",
+    "site_title": "Salon",
     "favicon_icon": "/images/favicon.ico",
     "favicon_image": "/images/favicon.png",
     "description": "A polished, marketing website template built with Eleventy",

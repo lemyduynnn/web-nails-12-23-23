@@ -1,26 +1,23 @@
 <template>
-  <section :id="block.id" :style="{ background: block.background}" class="section-banner w-full h-auto lg:py-16 py-10" :data-cms-bind="dataBinding">
-    <div class="container">
-        <div class="flex flex-col justify-center items-center">
-          <div class="image-container">
-            <div v-for="(img, index) in block.banners" :key="index">
-                <img :src="img.image" :alt="img.image_alt" class="flex-shrink object-cover aspect-[9/3]" />
-            </div>
+  <section :id="block.id" :style="{ backgroundImage: `url(${block.image})` }" class="section-banner lg:aspect-[5/2] relative" :data-cms-bind="dataBinding">
+    <div class="lg:flex hidden h-full items-end gap-2 dot-images">
+        <img src="/images/dotvang.png" alt="" class="h-[62px]"/>
+        <img src="/images/dotvang.png" alt="" class="h-[62px]"/>
+        <img src="/images/dotvangs.png" alt="" class="h-[62px]"/>
+        <img src="/images/dottim.png" alt="" class="h-[62px]"/>
+    </div>
+    <div class="container h-full">
+      <div class="w-full h-full flex flex-col justify-end items-end py-10">
+          <div class="bg-white bg-opacity-50 z-10 rounded-3xl p-4">
+              <div class="flex flex-col justify-center items-center lg:gap-6 gap-4 text-center">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6240333263745!2d106.64426347469808!3d10.840056889312594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175299ea71589e9%3A0xcac17f2d97912bbd!2zOSDEkMaw4budbmcgc-G7kSAxNCwgUGjGsOG7nW5nIDgsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1703474221923!5m2!1svi!2s" width="100%" height="100%" style="border:0; border-radius: 30px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <h4 class="text-main lg:text-5xl text-3xl">{{ block.title }}</h4>
+                  <p class="text-black lg:text-2xl text-lg">{{ block.description }}</p>
+                  <div class="text-black lg:text-5xl text-3xl">{{ block.subtitle }}</div>
+                  <button class="uppercase text-white px-10 py-4 bg-main rounded-full lg:text-4xl text-xl">{{ block.button }}</button>
+              </div>
           </div>
-        </div>
-        <div class="flex lg:flex-col justify-between items-center lg:items-end lg:px-20 mt-16 lg:mt-0">
-            <div class="lg:hidden flex gap-2">
-              <img src="/images/tron.png" class="w-6 h-6"/>
-              <img src="/images/tron.png" class="w-6 h-6"/>
-              <img src="/images/tron.png" class="w-6 h-6"/>
-            </div>
-            <img src="/images/nextblack.png" class="cursor-pointer object-cover z-50 lg:mr-10 mr-0" @click="handleNextClick(block.banners)" />
-        </div>
-        <div class="h-full text-center lg:gap-10 gap-6 flex flex-col justify-center items-center my-10">
-            <div class="font-bold lg:text-6xl text-3xl z-50" v-html="block.title"></div>
-            <div class="font-medium leading-normal z-50 lg:w-2/3 w-full" v-html="block.description"></div>
-            <button class="transition hover:opacity-80 hover:transition-all z-50 border-none bg-main text-secondary lg:w-80 uppercase w-full h-12 rounded-lg">{{ block.button}}</button>
-        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -32,45 +29,18 @@ interface Props {
   block: any;
 }
 
-const handleNextClick = (listImg: any) => {
-  if (listImg.length >= 1) {
-    const lastImage = listImg.pop();
-    listImg.unshift(lastImage);
-  }
-  return listImg;
-};
-
 defineProps<Props>()
 </script>
 
 <style lang="scss" scoped>
 .section-banner {
-  .image-container {
-    position: relative;
-    img {
-      max-width: 900px;
-      max-height: 300px;
-      width: 100%;
-      height:100%;
-    }
-    :nth-child(1) {
-      position: relative;
-      padding-right: 20px;
-    }
-    :nth-child(2) {
-      position: absolute;
-      z-index: 2;
-      top: 20px;
-      left: 20px;
-      padding-right: 10px;
-    }
-    :nth-child(3) {
-      position: absolute;
-      z-index: 3;
-      top: 40px;
-      left: 40px;
-    }
+  background-size: cover;
+  .dot-images {
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
-
 }
 </style>
+
+

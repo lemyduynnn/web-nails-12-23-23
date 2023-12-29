@@ -10,15 +10,15 @@ spec:
 blueprint:
   id: editor
   title: Editor
-  content:
-  background: '#000'
+  content: ""
+  background: "#F7F5FF"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  id: 
+  id:
     type: text
     label: ID Section
   title:
@@ -30,5 +30,3 @@ _inputs:
   background:
     type: color
     label: Color Background
- 
-  

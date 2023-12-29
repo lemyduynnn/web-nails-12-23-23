@@ -1,0 +1,103 @@
+title: About us
+content_blocks:
+  - _block_name: booking/hero
+    id: hero
+    title: Booking
+    image: /images/bookingbanner.png
+    image_alt:
+
+  - _block_name: booking/form
+    id: form
+    title: Please you select our services and staff
+    menuTab:
+      - tab: Services
+      - tab: Staff
+      - tab: Time/date
+    listService:
+      - title: Special offers
+        menuItem:
+          - title: Deluxe 1-2 Row Maintenence
+            price: $172
+            time: Approx 90 mins
+            description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+          - title: Deluxe 1-2 Row Maintenence
+            price: $172
+            time: Approx 90 mins
+            description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+          - title: Deluxe 1-2 Row Maintenence
+            price: $172
+            time: Approx 90 mins
+            description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+          - title: Deluxe 1-2 Row Maintenence
+            price: $172
+            time: Approx 90 mins
+            description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+      - title: Brazilian or Reconstructive Treatments
+      - title: Formal Event/Bridal
+      - title: Hair Cut & styles
+        menuItem:
+          - title: Deluxe 1-2 Row Maintenence
+            price: $172
+            time: Approx 90 mins
+            description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+          - title: Deluxe 1-2 Row Maintenence
+            price: $172
+            time: Approx 90 mins
+            description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+          - title: Deluxe 1-2 Row Maintenence
+            price: $172
+            time: Approx 90 mins
+            description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+          - title: Deluxe 1-2 Row Maintenence
+            price: $172
+            time: Approx 90 mins
+            description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+      - title: modern hair color
+      - title: Complimentary consultations
+    title_staff: Choose your Stylist
+    title_time: Select  time/ date
+    button_confirm: Confirm
+    button_clear: Clear
+    listStaff:
+      - img: /images/staff.png
+        name: Emily Martinez
+        position: Entry stylist
+      - img: /images/staff.png
+        name: Emily Martinez
+        position: Entry stylist
+      - img: /images/staff.png
+        name: Emily Martinez
+        position: Entry stylist
+      - img: /images/staff.png
+        name: Emily Martinez
+        position: Entry stylist
+      - img: /images/staff.png
+        name: Emily Martinez
+        position: Entry stylist
+      - img: /images/staff.png
+        name: Emily Martinez
+        position: Entry stylist
+    lable: Services selected
+    button: Book now
+    text_input: Add more people
+    background: "#FFF"
+    modal:
+      - title: Congratulations on your upcoming appointment!
+        description: We can't wait to pamper you and make your visit memorable
+
+  - _block_name: section/contact
+    id: contact
+    title: Contact Us
+    image: /images/contact.jpg
+    image_alt:
+    infor:
+      - lable: Phone
+        text: 832-968-6668
+      - lable: Address
+        text: 11011 Richmond Ave, Ste 900, Houston, TX 77042
+      - lable: Email
+        text: contact@fastboy.net
+      - lable: Opening hours
+        text: Monday — Thursday 10:00 – 20:00 <br/> Friday — Sunday 10:00 – 19:00
+    button: Book consultation
+    background: "#F7F5FF"

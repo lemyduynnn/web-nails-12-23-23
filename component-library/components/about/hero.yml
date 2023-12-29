@@ -1,0 +1,41 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: About Hero
+  description: About Hero
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  id: hero
+  title: About us
+  description: Our salon is designed to provide a serene and inviting atmosphere where you can escape the hustle and bustle of everyday life and indulge in self-care. Our stylists take the time to listen to your desires and offer personalized consultations to ensure we understand your unique needs. We use only the finest quality products to achieve exceptional results, and our commitment to ongoing education ensures that we stay at the forefront of the latest trends and techniques. At our Hair Salon, we don't just create beautiful hairstyles; we build relationships with our clients. We take pride in delivering excellence in every service, making each visit a delightful experience. Join us today and let us transform your hair into a work of art. Discover the beauty and confidence that await you at Beauty Hair Salon.
+  subtitle:
+    - text: Welcome to
+    - text: beauty salon
+  image: /images/aboutbanner.png
+  image_alt:
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id:
+    type: text
+    label: ID Section
+  title:
+    type: text
+    label: Title
+  description:
+    type: text
+    label: Description
+  subtitle[*].text:
+    type: text
+    label: text
+  image:
+    type: image
+    label: Image
+  image_alt:
+    type: text
+    label: Image Alt

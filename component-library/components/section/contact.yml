@@ -9,55 +9,47 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   id: contact
-  title: Contact
-  subtitle: We are ready to serve. Just say hello and you'll be assisted immediately
-  phone: +1 234 456 0099
-  address: 11011 Richmond Ave, Houston
-  email: contact@fastboy.net
-  input_contact:
-    - lable: name
-      placeholder: Enter your name
-    - lable: email
-      placeholder: Enter your email
-    - lable: phone
-      placeholder: Enter your phone
-  button: submit
-  background: '#000'
-
+  title: Contact Us
+  image: /images/contact.jpg
+  image_alt:
+  infor:
+    - lable: Phone
+      text: 832-968-6668
+    - lable: Address
+      text: 11011 Richmond Ave, Ste 900, Houston, TX 77042
+    - lable: Email
+      text: contact@fastboy.net
+    - lable: Opening hours
+      text: Monday — Thursday 10:00 – 20:00 <br/> Friday — Sunday 10:00 – 19:00
+  button: Book consultation
+  background: "#F7F5FF"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  id: 
+  id:
     type: text
     label: ID Section
   title:
     type: text
     label: Title
-  subtitle:
+  infor[*].lable:
     type: text
-    label: Subtitle
-  phone:
+    label: Lable
+  infor[*].text:
     type: text
-    label: Phone
-  address:
-    type: text
-    label: Address
-  email:
-    type: text
-    label: Email
-  input_contact[*].lable:
-    type: text
-    label: Lable Input
-  listTab[*].placeholder:
-    type: text
-    label: Placeholder Input
+    label: Text
   button:
     type: text
     label: Button
   background:
     type: color
-    label: Color Background  
-  
+    label: Color Background
+  image:
+    type: image
+    label: Image
+  image_alt:
+    type: text
+    label: Image Alt

@@ -1,0 +1,138 @@
+title: About us
+content_blocks:
+  - _block_name: about/hero
+    id: hero
+    title: About us
+    description: Our salon is designed to provide a serene and inviting atmosphere where you can escape the hustle and bustle of everyday life and indulge in self-care. Our stylists take the time to listen to your desires and offer personalized consultations to ensure we understand your unique needs. We use only the finest quality products to achieve exceptional results, and our commitment to ongoing education ensures that we stay at the forefront of the latest trends and techniques. At our Hair Salon, we don't just create beautiful hairstyles; we build relationships with our clients. We take pride in delivering excellence in every service, making each visit a delightful experience. Join us today and let us transform your hair into a work of art. Discover the beauty and confidence that await you at Beauty Hair Salon.
+    subtitle:
+      - text: Welcome to
+      - text: beauty salon
+    image: /images/aboutbanner.png
+    image_alt:
+
+  - _block_name: section/awards
+    id: awards
+    title: OUR  AWARDS
+    background: "#6C5CE7"
+    dataImg:
+      - listImg:
+          - image: /images/awards1.png
+            image_alt:
+          - image: /images/awards2.png
+            image_alt:
+          - image: /images/awards3.png
+            image_alt:
+      - listImg:
+          - image: /images/awards1.png
+            image_alt:
+          - image: /images/awards2.png
+            image_alt:
+          - image: /images/awards3.png
+            image_alt:
+      - listImg:
+          - image: /images/awards1.png
+            image_alt:
+          - image: /images/awards2.png
+            image_alt:
+          - image: /images/awards3.png
+            image_alt:
+      - listImg:
+          - image: /images/awards1.png
+            image_alt:
+          - image: /images/awards2.png
+            image_alt:
+          - image: /images/awards3.png
+            image_alt:
+
+  - _block_name: section/client
+    id: client
+    title: Client’s endless
+    background: "#FFF"
+    data:
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        description: I'm always impressed by the consistent quality of service and the incredible skills of the stylists here.
+        background: "#F7F5FF"
+        icon: /images/f.png
+      - name: Sharon Moore
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#F6F6F6"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.
+        icon: /images/f.png
+      - name: Elizabeth Johnson
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#FFFAF1"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis.
+        icon: /images/f.png
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#F6F6F6"
+        description: I'm always impressed by the consistent quality of service and the incredible skills of the stylists here.
+        icon: /images/f.png
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#FFF"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        icon: /images/f.png
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        description: I'm always impressed by the consistent quality of service and the incredible skills of the stylists here.
+        background: "#F7F5FF"
+        icon: /images/f.png
+      - name: Sharon Moore
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#F6F6F6"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.
+        icon: /images/f.png
+      - name: Elizabeth Johnson
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#FFFAF1"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis.
+        icon: /images/f.png
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#F6F6F6"
+        description: I'm always impressed by the consistent quality of service and the incredible skills of the stylists here.
+        icon: /images/f.png
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#FFF"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        icon: /images/f.png
+
+  - _block_name: section/contact
+    id: contact
+    title: Contact Us
+    image: /images/contact.jpg
+    image_alt:
+    infor:
+      - lable: Phone
+        text: 832-968-6668
+      - lable: Address
+        text: 11011 Richmond Ave, Ste 900, Houston, TX 77042
+      - lable: Email
+        text: contact@fastboy.net
+      - lable: Opening hours
+        text: Monday — Thursday 10:00 – 20:00 <br/> Friday — Sunday 10:00 – 19:00
+    button: Book consultation
+    background: "#F7F5FF"

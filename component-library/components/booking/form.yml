@@ -1,0 +1,105 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Booking Form
+  description: Booking Form
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  id: form
+  title: Please you select our services and staff
+  menuTab:
+    - tab: Services
+    - tab: Staff
+    - tab: Time/date
+  listService:
+    - title: Special offers
+      menuItem:
+        - title: Deluxe 1-2 Row Maintenence
+          price: $172
+          time: Approx 90 mins
+          description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+        - title: Deluxe 1-2 Row Maintenence
+          price: $172
+          time: Approx 90 mins
+          description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+        - title: Deluxe 1-2 Row Maintenence
+          price: $172
+          time: Approx 90 mins
+          description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+        - title: Deluxe 1-2 Row Maintenence
+          price: $172
+          time: Approx 90 mins
+          description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+    - title: Brazilian or Reconstructive Treatments
+    - title: Formal Event/Bridal
+    - title: Hair Cut & styles
+      menuItem:
+        - title: Deluxe 1-2 Row Maintenence
+          price: $172
+          time: Approx 90 mins
+          description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+        - title: Deluxe 1-2 Row Maintenence
+          price: $172
+          time: Approx 90 mins
+          description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+        - title: Deluxe 1-2 Row Maintenence
+          price: $172
+          time: Approx 90 mins
+          description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+        - title: Deluxe 1-2 Row Maintenence
+          price: $172
+          time: Approx 90 mins
+          description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
+    - title: modern hair color
+    - title: Complimentary consultations
+  title_staff: Choose your Stylist
+  title_time: Select  time/ date
+  button_confirm: Confirm
+  button_clear: Clear
+  listStaff:
+    - img: /images/staff.png
+      name: Emily Martinez
+      position: Entry stylist
+    - img: /images/staff.png
+      name: Emily Martinez
+      position: Entry stylist
+    - img: /images/staff.png
+      name: Emily Martinez
+      position: Entry stylist
+    - img: /images/staff.png
+      name: Emily Martinez
+      position: Entry stylist
+    - img: /images/staff.png
+      name: Emily Martinez
+      position: Entry stylist
+    - img: /images/staff.png
+      name: Emily Martinez
+      position: Entry stylist
+  lable: Services selected
+  button: Book now
+  text_input: Add more people
+  background: "#FFF"
+  modal:
+    - title: Congratulations on your upcoming appointment!
+      description: We can't wait to pamper you and make your visit memorable
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id:
+    type: text
+    label: ID Section
+  title:
+    type: text
+    label: Title
+  image:
+    type: image
+    label: Image
+  image_alt:
+    type: text
+    label: Image Alt

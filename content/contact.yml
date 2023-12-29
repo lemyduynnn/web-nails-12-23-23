@@ -1,0 +1,23 @@
+title: About us
+content_blocks:
+  - _block_name: contact/hero
+    id: hero
+    title: Contact us
+    image: /images/contacthero.png
+    image_alt:
+
+  - _block_name: contact/us
+    id: us
+    image: /images/contact.jpg
+    image_alt:
+    infor:
+      - lable: Phone
+        text: 832-968-6668
+      - lable: Address
+        text: 11011 Richmond Ave, Ste 900, Houston, TX 77042
+      - lable: Email
+        text: contact@fastboy.net
+      - lable: Opening hours
+        text: Monday — Thursday 10:00 – 20:00 <br/> Friday — Sunday 10:00 – 19:00
+    button: Book consultation
+    background: "#FFF"

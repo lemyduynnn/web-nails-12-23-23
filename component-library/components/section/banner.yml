@@ -8,47 +8,37 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-    id: section-banner
-    title: Create a different,<br/>confident lifestyle.
-    description: <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-    banners:
-      - image: /images/banner1.png
-        image_alt:
-      - image: /images/banner2.png
-        image_alt:
-      - image: /images/banner3.png
-        image_alt:
-    button: About Us
-    background: '#F0F0F0'
-
+  id: banner
+  title: LET’S MET THERE
+  description: 11011 Richmond Ave, Ste 900, Houston, TX 77042
+  subtitle: we open now
+  image: /images/banner.png
+  image_alt:
+  button: make an appointment
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  id: 
+  id:
     type: text
     label: ID Section
   title:
     type: text
     label: Title
   description:
-    type: markdown
+    type: text
     label: Description
-  image: 
+  subtitle:
+    type: text
+    lable: Subtitle
+  image:
     type: image
     label: Image
-  image_alt: 
+  image_alt:
     type: text
     label: Image Alt
-  banners[*].image:
-    type: image
-    label: Image
-  banners[*].image_alt:
+  button:
     type: text
-    label: Image Alt
-  background:
-    type: color
-    label: Color Background
-  
+    lable: Button

@@ -1,0 +1,53 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Voucher Hero
+  description: Voucher Hero
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+    id: hero
+    title: Gift card/ vouchers
+    data:
+      - img: /images/voucherhero1.png
+        title: $100  EGIFT VOUCHER
+        description: The perfect gift for others… or yourself!<br/><b>Valid until 31st Dec 2024</b><br/>Vouchers can be redeemed for in-salon services and the best hair care products.
+        button: Purchase voucher
+      - img: /images/voucherhero1.png
+        title: $100  EGIFT VOUCHER
+        description: The perfect gift for others… or yourself!<br/><b>Valid until 31st Dec 2024</b><br/>Vouchers can be redeemed for in-salon services and the best hair care products.
+        button: Purchase voucher
+      - img: /images/voucherhero1.png
+        title: $100  EGIFT VOUCHER
+        description: The perfect gift for others… or yourself!<br/><b>Valid until 31st Dec 2024</b><br/>Vouchers can be redeemed for in-salon services and the best hair care products.
+        button: Purchase voucher
+      - img: /images/voucherhero1.png
+        title: $100  EGIFT VOUCHER
+        description: The perfect gift for others… or yourself!<br/><b>Valid until 31st Dec 2024</b><br/>Vouchers can be redeemed for in-salon services and the best hair care products.
+        button: Purchase voucher
+    background: "#FFF"
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id:
+    type: text
+    label: ID Section
+  title:
+    type: text
+    label: Title
+  description:
+    type: text
+    label: Description
+  subtitle[*].text:
+    type: text
+    label: text
+  image:
+    type: image
+    label: Image
+  image_alt:
+    type: text
+    label: Image Alt

@@ -1,39 +1,36 @@
 {
-  "logo": "/images/logo1.png",
+  "logo": "/images/logo.png",
   "image_alt": "Logo",
-  "background": "#FFFFFF",
-  "icon" : [
-    {
-      "nameIcon": "/images/youtube.svg"
-    },
-    {
-      "nameIcon": "/images/facebook.svg"
-    },
-    {
-      "nameIcon": "/images/google.svg"
-    }
-  ],
+  "background": "#6C5CE7",
   "nav": [
     {
       "link": "/",
       "text": "Home"
     },
     {
-      "link": "/#aboutus",
+      "link": "/about",
       "text": "About Us"
     },
     {
-      "link": "/#service",
+      "link": "/service",
       "text": "Service"
     },
     {
-      "link": "/#gallery",
+      "link": "/gallery",
       "text": "Gallery"
     },
     {
-      "link": "#contact",
-      "text": "Contact"
-    }
+      "link": "voucher",
+      "text": "Gift card/ vouchers"
+    },
+    {
+      "link": "booking",
+      "text": "Booking"
+    },
+    {
+      "link": "contact",
+      "text": "Contact Us"
+    }   
   ],
   "_inputs": {
     "logo": {
@@ -41,9 +38,6 @@
     },
     "background": {
       "type": "color"
-    },
-    "nameIcon": {
-      "type": "image"
     }
   }
 }

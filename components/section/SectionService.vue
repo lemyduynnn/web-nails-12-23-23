@@ -1,69 +1,140 @@
 <template>
-  <section :id="block.id" :style="{ background: block.background }" :data-cms-bind="dataBinding" class="section-service py-16">
-    <div class="container">
-      <div class="flex flex-col">
-        <div class="lg:flex hidden flex-col items-end justify-end mr-10 mb-[-100px] z-10">
-          <img src="/images/dotblack.png" class="object-cover"/>
+  <section :id="block.id" :style="{ background: block.background }" :data-cms-bind="dataBinding" class="section-service relative">
+    <div class="lg:flex hidden items-start absolute top-0 left-0">
+      <div class="bg-secondary w-[375px] h-[229px]"></div>
+      <div class="bg-main w-[100px] h-[229px] rounded-br-full"></div>
+    </div>
+    <div class="container lg:py-28 py-10">
+      <div class="flex flex-col justify-center items-center lg:gap-28 gap-10 h-auto">
+        <div class="flex flex-col relative lg:p-6 p-2">
+          <img src="/images/bling.png" class="absolute z-30 left-1/4 top-[-5px] w-6 h-6 lg:w-8 lg:h-8"/>
+          <div class="ellipse"></div>
+          <h2 class="z-20 text-main lg:text-5xl text-2xl uppercase text-center">{{ block.title }}</h2>
         </div>
-        <div class="text-main grid lg:grid-cols-2 grid-cols-1">
-          <div class="text-main flex flex-col gap-6">
-            <h4 class="text-[14px] leading-normal font-semibold uppercase">{{ block.title }}</h4>
-            <h1 class="text-[56px] leading-[60px] font-normal">{{ block.subtitle }}</h1>
-            <div class="text-lg font-normal leading-normal w-full lg:w-2/3" v-html="block.description"></div>
-            <div class="flex gap-24">    
-              <ul class="lg:flex-col flex-row flex lg:gap-6 lg:justify-start lg:items-start justify-between items-between w-full mb-10">
-                <li v-for="(item, index) in block.listTab" :key="index" :class="{ 'bg-main text-secondary flex justify-between items-center gap-4 w-full': isActive(item.num) }" @click="setActive(item.num)" class="w-full text-sm px-4 py-2 cursor-pointer whitespace-nowrap text-main font-medium lg:text-[40px] text-[20px] leading-tight">
-                  {{item.title_tab}}
-                  <span v-if="isActive(item.num)" class="text-xl hidden lg:block">{{item.num}}</span>
-                </li>
-              </ul>
-              <div class="hidden lg:flex flex-col h-full justify-center mr-[-40px] z-10">
-                <div v-for="(item, index) in block.listTab" :key="index">
-                  <div v-if="isActive(item.num)" class="text-secondary bg-main p-6 h-auto">
-                    <h4 class="text-2xl font-medium mb-2">{{ item.title_tab }}</h4>
-                    <p class="leading-normal">{{ item.description }}</p>
-                  </div>
-                </div>
+        <swiper
+            :slidesPerView="1"
+            :spaceBetween="30"
+            :pagination="{ clickable: true }"
+            :modules="modules"
+            class="mySwiper w-full"
+            @swiper="onSwiper"
+        >
+          <swiper-slide v-for="(data, index) in block.dataImg" :key="index">
+            <div class="grid lg:grid-cols-4 grid-cols-2 custom-img justify-between items-center gap-4">
+              <div v-for="(img, index) in data.listImg" :key="index">
+                <img :src="img.image" :alt="img.image_alt" class="object-cover"/>
+                <!-- <h4 class="hidden">{{ img.title_img }}</h4> -->
               </div>
             </div>
+          </swiper-slide>
+        </swiper>
+      </div>
+      <div class="flex w-full h-full justify-center items-center gap-10 lg:mt-20 mt-10">
+        <div class="bg-main rounded-2xl rotate-45">
+          <img
+          :class="{ 'opacity-20 cursor-auto': isFirstSlide }"
+          src="/images/nextvang.png"
+          class="cursor-pointer object-cover z-30 w-[62px] bottom-36 rotate-[-225deg] p-2"
+          @click="prevSlide"/>
+        </div>
+        <div class="flex gap-2">
+          <div v-for="(data, index) in block.dataImg" :key="index">
+            <span
+              class="text-gray-300 cursor-pointer text-2xl"
+              :class="{ 'text-main': index === currentSlide }"
+              @click="goToSlide(index)"
+            >{{ index + 1 }}</span>
           </div>
-          <div class="flex flex-col justify-center items-center">
-            <img :src="block.image" :alt="block.image_alt" class="w-[646px] h-[450px] flex-shrink object-cover">
-          </div>
-          <div v-for="(item, index) in block.listTab" :key="index" class="flex lg:hidden flex-col w-full justify-center items-center">
-            <div v-if="isActive(item.num)" class="text-secondary bg-main p-6 w-2/3 mt-[-40px]">
-              <h4 class="text-2xl font-medium mb-4">{{ item.title_tab }}</h4>
-              <p class="leading-normal">{{ item.description }}</p>
-            </div>
-          </div>
-        </div> 
-        <div class="lg:flex hidden flex-col w-[70px] h-auto items-center rotate-90 ml-8">
-          <img src="/images/dotblack.png" class="object-cover"/>
+        </div>
+        <div class="bg-main rounded-2xl rotate-45">
+          <img
+          :class="{ 'opacity-20 cursor-auto': isLastSlide }"
+          src="/images/nextvang.png"
+          class="cursor-pointer object-cover z-30 w-[62px] bottom-36 rotate-[-45deg] p-2"
+          @click="nextSlide"
+        />
         </div>
       </div>
+    </div>
+    <div class="lg:flex hidden items-end absolute bottom-0 right-0">
+      <div class="bg-main w-[100px] h-[229px] rounded-tl-full"></div>
+      <div class="bg-secondary w-[375px] h-[229px]"></div>
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref, defineProps } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+const modules = [];
+const mySwiper = ref<any | null>(null);
+const isFirstSlide = ref(false);
+const isLastSlide = ref(false);
+const currentSlide = ref(0);
+
+const onSwiper = (swiperInstance: any) => {
+  mySwiper.value = swiperInstance;
+  updateSlideStatus();
+};
+
+const updateSlideStatus = () => {
+  isFirstSlide.value = mySwiper.value?.isBeginning;
+  isLastSlide.value = mySwiper.value?.isEnd;
+  currentSlide.value = mySwiper.value?.activeIndex || 0;
+};
+
+const prevSlide = () => {
+  if (mySwiper.value) {
+    mySwiper.value.slidePrev();
+    updateSlideStatus();
+  }
+};
+
+const nextSlide = () => {
+  if (mySwiper.value) {
+    mySwiper.value.slideNext();
+    updateSlideStatus();
+  }
+};
+
+const goToSlide = (index: number) => {
+  if (mySwiper.value) {
+    mySwiper.value.slideTo(index);
+    updateSlideStatus();
+  }
+};
+
 
 interface Props {
   dataBinding: any;
   block: any;
 }
 
-const activeTab = ref(1);
-const isActive = (tab: number) => activeTab.value === tab;
-
-const setActive = (tab: number) => {
-  activeTab.value = tab;
-};
-
-defineProps<Props>()
+const { dataBinding, block } = defineProps<Props>();
 </script>
+
+
 
 <style lang="scss" scoped>
 .section-service {
+  .custom-img {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    :first-child {
+      grid-column: span 2 / span 2;
+      display: flex;
+      height: 100%;
+    }
+    :last-child {
+      grid-column: span 2 / span 2;
+      display: flex;
+      height: 100%;
+    }
+  }
 }
 </style>

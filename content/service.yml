@@ -1,0 +1,68 @@
+title: Our Service
+content_blocks:
+  - _block_name: service/hero
+    id: hero
+    title: Our Services
+    description: At Maria's Hair Salon, we're thrilled to invite you to experience the ultimate in haircare and styling! Whether you're seeking a fresh new look, a simple trim, or a complete makeover, our talented team of stylists is here to make your hair dreams come true. We offer a wide range of services and fabulous package deals to suit every need and budget. Join us and let us pamper you with top-notch treatments and expert advice. Book your appointment today and discover the beauty that awaits you at Maria's Hair Salon. We can't wait to transform your hair and boost your confidence! Warm regards
+    author: Maria, Owner of Maria's Hair Salon
+    subtitle: Dear Clients
+    image: /images/servicebanner.png
+    image_alt:
+
+  - _block_name: service/our
+    id: our
+    title: Our Service
+    data:
+      - logo: /images/iconlogo.png
+        img: /images/our1.png
+        title: HAIRCUTS & STYLE
+        button: Book now
+        type:
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+      - logo: /images/iconlogo.png
+        img: /images/our1.png
+        title: HAIRCUTS & STYLE
+        button: Book now
+        type:
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+      - logo: /images/iconlogo.png
+        img: /images/our1.png
+        title: HAIRCUTS & STYLE
+        button: Book now
+        type:
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+      - logo: /images/iconlogo.png
+        img: /images/our1.png
+        title: HAIRCUTS & STYLE
+        button: Book now
+        type:
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+    background: "#FFF"

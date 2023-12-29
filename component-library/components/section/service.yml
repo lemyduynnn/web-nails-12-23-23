@@ -10,58 +10,104 @@ spec:
 blueprint:
   id: service
   title: Our Service
-  subtitle: What we serve?
-  description: <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-  listTab: 
-    - title_tab: Eyelash
-      num: 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
-    - title_tab: Waxing
-      num: 2
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
-    - title_tab: Nail Art
-      num: 3
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
-    - title_tab: Skin
-      num: 4
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and 
-  image: /images/service.png
-  image_alt:
-  background: "#F0F0F0"
-
+  dataImg:
+    - listImg:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service1.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service2.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service3.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service4.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service5.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service6.png
+          image_alt:
+    - listImg:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service1.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service2.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service3.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service4.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service5.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service6.png
+          image_alt:
+    - listImg:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service1.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service2.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service3.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service4.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service5.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service6.png
+          image_alt:
+    - listImg:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service1.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service2.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service3.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service4.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service5.png
+          image_alt:
+        - title_img: HAIRCUTS & STYLE
+          image: /images/service6.png
+          image_alt:
+  background: "#F9F5FF"
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  id: 
+  id:
     type: text
     label: ID Section
   title:
     type: text
     label: Title
-  subtitle:
+  dataImg[*].listImg[*].title_img:
     type: text
-    label: Subtitle
-  description:
-    type: markdown
-    label: Description
-  image: 
+    label: Title Image
+  dataImg[*].listImg[*].image:
     type: image
     label: Image
-  image_alt: 
+  dataImg[*].listImg[*].image_alt:
     type: text
     label: Image Alt
-  listTab[*].title_tab:
-    type: text
-    label: Title Tab
-  listTab[*].num:
-    type: number
-    label: Number
-  listTab[*].description:
-    type: text
-    label: Description
   background:
     type: color
     label: Color Background
-  

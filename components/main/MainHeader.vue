@@ -1,14 +1,14 @@
 <template>
-  <header :style="{ background: headerData.background }" class="text-main sticky top-0 z-[99999] h-[84px]">
+  <header :style="{ background: headerData.background }" class="text-main sticky top-0 z-[99999] h-[88px]">
     <div class="container h-full" :style="{ background: headerData.background }">
       <div class="h-full">
         <nav class="flex items-center gap-[30px] justify-between h-full">
-          <div>
+          <div class="">
             <img v-if="headerData.logo" :src="headerData.logo" :alt="headerData.image_alt"/>
           </div>
           <div class="hidden lg:flex">
-            <ul class="lg:flex items-center h-full">
-              <li v-for="item in headerData.nav" :key="item.link" class="header-menu-line">
+            <ul class="lg:flex items-center h-full text-white">
+              <li v-for="item in headerData.nav" :key="item.link" :class="{ 'text-secondary': isActiveMenuItem(item.link) }" class="header-menu-line hover:text-secondary">
                 <NuxtLink
                   class="block"
                   :to="item.link"
@@ -17,14 +17,9 @@
                 </NuxtLink>
               </li>
             </ul>
-            <ul class="lg:flex items-center h-full header-menu-icon">
-              <li v-for="(item, index) in headerData.icon" :key="index+1">
-                <img :src="item.nameIcon" class="cursor-pointer"/>
-              </li>
-            </ul>
           </div>
           <div class="lg:hidden block">
-            <img src="/images/icon-menu.png" alt="" class="mx-auto" @click="isOpen = true">
+            <img src="/images/icon-menu.png" alt="" class="mx-auto cursor-pointer" @click="isOpen = true">
           </div>
         </nav>
       </div>
@@ -42,7 +37,7 @@
           </div>
           <nav>
             <ul class="flex flex-col">
-              <li v-for="item in headerData.nav" :key="item.link">
+              <li v-for="item in headerData.nav" :key="item.link" class="hover:text-secondary">
                 <NuxtLink
                   class="block"
                   :to="item.link"
@@ -60,17 +55,21 @@
 
 <script setup lang="ts">
 import headerData from '@/data/header.json';
-import { ref,watch  } from 'vue';
-import { useRoute  } from 'vue-router';
+import { ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 
-const isOpen = ref(false)
+const isOpen = ref(false);
 const route = useRoute();
 
 watch(() => route.fullPath, () => {
-  isOpen.value = false
-})
+  isOpen.value = false;
+});
 
+const isActiveMenuItem = (link:any) => {
+  return route.path === link;
+};
 </script>
+
 
 <style lang="scss" scoped>
 nav {
@@ -78,27 +77,11 @@ nav {
     gap: 30px;
     li {
       a {
-        font-size: 17px;
+        font-size: 12px;
         font-weight: 400;
         transition: all 0.3s ease;
-        text-transform: uppercase;
-        &:hover {
-          font-weight: bold;
-        }
       }
     }
-    .header-menu-line:last-child {
-         position: relative;
-         &:after {
-            position: absolute;
-            right: -30px;
-            top: 1px;
-            height: 20px;
-            width: 1px;
-            background:#000000 ;
-            content: "";
-         }
-      }
   }
   .header-menu-icon {
         gap: 20px;

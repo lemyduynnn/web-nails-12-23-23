@@ -1,14 +1,11 @@
-@use 'variables';
-@import url('https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import 'variables';
 
-html {
-  font-family: 'Roboto', sans-serif;
-  // font-family: 'Playball', sans-serif;
+* {
+  font-family: 'Abril Fatface', serif;
   scroll-behavior: smooth;
   font-size: 18px;
   line-height: 24px;
-  color: #000;
-  font-weight: 300;
 }
 
 body {
@@ -16,32 +13,16 @@ body {
   overflow-x: hidden;
 }
 
-.heading-2 {
-  font-family: 'Playball', sans-serif;
-  font-size: 70px;
-  font-weight: 400;
-  line-height: 88px;
-}
-.heading-3 {
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 29px;
-}
-
-.custom-btn {
-  padding: 18px 40px;
-  font-weight: 400;
-  display: inline-block;
-  background: var(--color-primary);
-  cursor: pointer;
-  color: #fff;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  font-size: 20px;
-  min-width: fit-content;
-  &:hover {
-    opacity: 0.8;
-  }
+.ellipse {
+  position: absolute;
+  transform: rotate(-6deg);
+  z-index: 2;
+  width: 90%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid #6C5CE7; 
+  top:0;
+  border-radius: 50%;
 }
 
 p {

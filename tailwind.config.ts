@@ -6,9 +6,8 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['"Roboto"', 'sans-serif'],
-        playball: ['"Playball"', 'sans-serif'],
-        viaodaLibre: ['"Viaoda Libre"', 'sans-serif']
+        abril: ['"Abril"', 'sans-serif'],
+        fatface: ['"Fatface"', 'sans-serif']
       },
       container: {
         center: true,
@@ -25,8 +24,7 @@ export default <Partial<Config>>{
         effects: 'var(--color-effects)'
       },
       aspectRatio: {
-        '3/2': '3 / 2',
-        '9/3': '9 / 3',
+        '5/2': '5 / 2',
       }
     }
   },

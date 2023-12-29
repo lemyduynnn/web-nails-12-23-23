@@ -1,0 +1,41 @@
+title: Our Service
+content_blocks:
+  - _block_name: voucher/hero
+    id: hero
+    title: Gift card/ vouchers
+    data:
+      - img: /images/voucherhero1.png
+        title: $100  EGIFT VOUCHER
+        description: The perfect gift for others… or yourself!<br/><b>Valid until 31st Dec 2024</b><br/>Vouchers can be redeemed for in-salon services and the best hair care products.
+        button: Purchase voucher
+      - img: /images/voucherhero1.png
+        title: $100  EGIFT VOUCHER
+        description: The perfect gift for others… or yourself!<br/><b>Valid until 31st Dec 2024</b><br/>Vouchers can be redeemed for in-salon services and the best hair care products.
+        button: Purchase voucher
+      - img: /images/voucherhero1.png
+        title: $100  EGIFT VOUCHER
+        description: The perfect gift for others… or yourself!<br/><b>Valid until 31st Dec 2024</b><br/>Vouchers can be redeemed for in-salon services and the best hair care products.
+        button: Purchase voucher
+      - img: /images/voucherhero1.png
+        title: $100  EGIFT VOUCHER
+        description: The perfect gift for others… or yourself!<br/><b>Valid until 31st Dec 2024</b><br/>Vouchers can be redeemed for in-salon services and the best hair care products.
+        button: Purchase voucher
+    background: "#FFF"
+
+  - _block_name: voucher/term
+    id: hero
+    title: Term & condition
+    background: "#F7F5FF"
+    listCondition:
+      - title: <b>Redemption Period:</b> This gift voucher is valid for use from [Start Date] to [End Date].
+      - title: <b>Appointment Required:</b> To redeem this voucher, recipients must schedule an appointment in advance by calling [Salon Phone Number] or booking online at [Salon Website]. Walk-in appointments may not be accommodated.
+      - title: <b>Non-Transferable:</b> Gift vouchers are non-transferable and can only be used by the recipient whose name appears on the voucher.
+      - title: <b>No Cash Value:</b> This voucher has no cash value and cannot be exchanged for cash or any other monetary equivalent.
+      - title: <b>One-Time Use:</b> Each gift voucher may be used for one visit only, and any remaining balance will not be carried forward to future appointments.
+      - title: <b>Service Limitations:</b> This voucher can be applied toward hair services and products at [Salon Name] and cannot be used for gratuities or combined with other discounts or promotions.
+      - title: <b>Lost or Stolen Vouchers:</b> Salon Name is not responsible for lost or stolen vouchers. Protect this voucher as you would cash.
+      - title: <b>Expiration Date:</b> Unused vouchers will expire after the redemption period specified on the voucher. No extensions will be granted.
+      - title: <b>Cancellation Policy:</b> If the recipient cancels an appointment with less than 24 hours' notice, the voucher may be forfeited or marked as used.
+      - title: <b>Non-Refundable:</b> Gift vouchers are non-refundable. No refunds will be issued for partially used or unused vouchers.
+      - title: <b>Appointment Required:</b> To redeem this voucher, recipients must schedule an appointment in advance by calling [Salon Phone Number] or booking online at [Salon Website]. Walk-in appointments may not be accommodated.
+      - title: <b>Non-Transferable:</b> Gift vouchers are non-transferable and can only be used by the recipient whose name appears on the voucher.

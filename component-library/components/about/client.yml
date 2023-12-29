@@ -1,0 +1,102 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: About Client
+  description: About Client
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+    id: client
+    title: Client’s endless
+    background: "#FFF"
+    data:
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        description: I'm always impressed by the consistent quality of service and the incredible skills of the stylists here.
+        background: "#F7F5FF"
+        icon: /images/f.png
+      - name: Sharon Moore
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#F6F6F6"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.
+        icon: /images/f.png
+      - name: Elizabeth Johnson
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#FFFAF1"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis.
+        icon: /images/f.png
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#F6F6F6"
+        description: I'm always impressed by the consistent quality of service and the incredible skills of the stylists here.
+        icon: /images/f.png
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#FFF"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        icon: /images/f.png
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        description: I'm always impressed by the consistent quality of service and the incredible skills of the stylists here.
+        background: "#F7F5FF"
+        icon: /images/f.png
+      - name: Sharon Moore
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#F6F6F6"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.
+        icon: /images/f.png
+      - name: Elizabeth Johnson
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#FFFAF1"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis.
+        icon: /images/f.png
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#F6F6F6"
+        description: I'm always impressed by the consistent quality of service and the incredible skills of the stylists here.
+        icon: /images/f.png
+      - name: Kimberly Miller
+        mission: clients beauty salon
+        user: /images/user.png
+        user_alt:
+        background: "#FFF"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        icon: /images/f.png
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id:
+    type: text
+    label: ID Section
+  title:
+    type: text
+    label: Title 
+  image:
+    type: image
+    label: Image
+  image_alt:
+    type: text
+    label: Image Alt

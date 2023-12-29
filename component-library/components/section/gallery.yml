@@ -10,74 +10,25 @@ spec:
 blueprint:
   id: gallery
   title: Our Gallery
-  subtitle: Better choice<br/>to create new lifestyle
-  infor: Stay informed with our newsletter.
-  button_booking:
-    - button_desktop: Booking now
-    - button_mobile: Subcribe now
-  time:
-    - morning: Morning
-    - afternoon: Afternoon
-  title_infor_update: YOUR INFORMATION
-  date_infor_update: Thursday 10-26-2023
-  time_infor_update: 16:30
-  button_update: CONFIRM APPOINTMENT
-  title_modal: BOOKING AN APPOINTMENT
-  listMenu:
-    - item: Eyelash
-    - item: Waxing
-    - item: Nail Art
-    - item: Skin
-  listImage:
+  background: "#FFFFFF"
+  img: /images/gallery6.png
+  img_alt:
+  description: Sellect title  we will show service’s photos Or <a>See alls</a>
+  menuTab:
+    - tab: STYLE HAIR
+    - tab: HAIR TREATMENT
+    - tab: MAKE-UP
+  dataImg:
     - image: /images/gallery1.png
-      title: Eyelash
-      subtitle: Designed by Roxy
       image_alt:
     - image: /images/gallery2.png
-      title: Eyelash
-      subtitle: Designed by Roxy
+      image_alt:
+    - image: /images/gallery4.png
+      image_alt:
+    - image: /images/gallery5.png
       image_alt:
     - image: /images/gallery3.png
-      title: Eyelash
-      subtitle: Designed by Roxy
       image_alt:
-    - image: /images/gallery1.png
-      title: Eyelash
-      subtitle: Designed by Roxy
-      image_alt:
-    - image: /images/gallery2.png
-      title: Eyelash
-      subtitle: Designed by Roxy
-      image_alt:
-    - image: /images/gallery3.png
-      title: Eyelash
-      subtitle: Designed by Roxy
-      image_alt:
-    - image: /images/gallery1.png
-      title: Eyelash
-      subtitle: Designed by Roxy
-      image_alt:
-    - image: /images/gallery2.png
-      title: Eyelash
-      subtitle: Designed by Roxy
-      image_alt:
-    - image: /images/gallery3.png
-      title: Eyelash
-      subtitle: Designed by Roxy
-      image_alt:
-    - image: /images/gallery1.png
-      title: Eyelash
-      subtitle: Designed by Roxy
-      image_alt:
-    - image: /images/gallery2.png
-      title: Eyelash
-      subtitle: Designed by Roxy
-      image_alt:
-    - image: /images/gallery3.png
-      title: Eyelash
-      subtitle: Designed by Roxy
-      image_alt:
-  background: "#F0F0F0"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -90,54 +41,24 @@ _inputs:
   title:
     type: text
     label: Title
-  subtitle:
+  description:
     type: markdown
-    label: Subtitle
-  infor:
-    type: text
-    label: Infor
-  listMenu[*].item:
+    label: Description
+  menuTab[*].tab:
     type: text
     label: Title Menu
-  listImage[*].image:
+  img:
     type: image
     label: Image
-  listImage[*].image_alt:
+  img_alt:
     type: text
     label: Image Alt
-  listImage[*].title:
+  dataImg[*].image:
+    type: image
+    label: Image
+  dataImg[*].image_alt:
     type: text
-    label: Title Image
-  listImage[*].subtitle:
-    type: text
-    label: Subtitle Image
-  button_booking[*].button_desktop:
-    type: text
-    label: Title Button Desktop
-  button_booking[*].button_mobile:
-    type: text
-    label: Title Button Mobile
-  time[*].morning:
-    type: text
-    label: Title Time
-  time[*].afternoon:
-    type: text
-    label: Title Time
-  title_infor_update:
-    type: text
-    label: Title Infor Update
-  date_infor_update:
-    type: text
-    label: Date Infor Update
-  time_infor_update:
-    type: number
-    label: Time Infor Update
-  button_update:
-    type: text
-    label: Button Update
-  title_modal:
-    type: text
-    label: Title Modal
+    label: Image Alt
   background:
     type: color
     label: Color Background
