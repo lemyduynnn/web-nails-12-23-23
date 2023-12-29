@@ -64,7 +64,7 @@
         "../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#mdc-imports": [
-        "./mdc-imports.mjs"
+        "./mdc-imports"
       ],
       "#image": [
         "../node_modules/.pnpm/@nuxt+image@1.0.0-rc.3/node_modules/@nuxt/image/dist/runtime"
@@ -89,6 +89,9 @@
       ],
       "#tailwind-config": [
         "./tailwind.config"
+      ],
+      "#tailwind-config/*": [
+        "./tailwind.config/*"
       ],
       "#vue-router": [
         "./vue-router"

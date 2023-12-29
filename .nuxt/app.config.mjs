@@ -1,6 +1,6 @@
 
 import { updateAppConfig } from '#app'
-import { defuFn } from '/Users/lethimyduyen/Documents/intern/web-nails-12-23-23/web-nails-12-23-23/node_modules/.pnpm/defu@6.1.2/node_modules/defu/dist/defu.mjs'
+import { defuFn } from '/Users/lethimyduyen/Documents/intern/webb/web-nails-12-23-23/node_modules/.pnpm/defu@6.1.2/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {
   "nuxt": {},
@@ -38,6 +38,6 @@ if (import.meta.hot) {
   })
 }
 
-import cfg0 from "/Users/lethimyduyen/Documents/intern/web-nails-12-23-23/web-nails-12-23-23/app.config.ts"
+import cfg0 from "/Users/lethimyduyen/Documents/intern/webb/web-nails-12-23-23/app.config.ts"
 
 export default /* #__PURE__ */ defuFn(cfg0, inlineConfig)

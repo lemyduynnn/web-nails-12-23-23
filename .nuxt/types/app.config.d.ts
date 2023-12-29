@@ -1,7 +1,7 @@
 
 import type { CustomAppConfig } from 'nuxt/schema'
 import type { Defu } from 'defu'
-import cfg0 from "/Users/lethimyduyen/Documents/intern/web-nails-12-23-23/web-nails-12-23-23/app.config"
+import cfg0 from "/Users/lethimyduyen/Documents/intern/webb/web-nails-12-23-23/app.config"
 
 declare const inlineConfig = {
   "nuxt": {},
