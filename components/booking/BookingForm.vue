@@ -86,9 +86,9 @@ import { important } from '#tailwind-config';
                         <h4 class="uppercase text-black">{{ block.title_time }}</h4>
                      </div>
                      <div class="p-6 bg-[#EAEAEA] flex flex-col gap-10">
-                        <div class="grid grid-cols-2 justify-center items-center gap-4 custom_height">
+                        <div class="grid lg:grid-cols-2 grid-cols-1 justify-center items-center lg:gap-4 gap-0 custom_height">
                            <div class="p-4 w-full h-full flex flex-col">
-                              <VueDatePicker v-model="date" :inline="{ input: false }" auto-apply id="custom_date" />
+                              <VueDatePicker :inline="{ input: false }" auto-apply id="custom_date" />
                            </div>
                            <div class="flex flex-col w-full custom_heightTime">
                               <div v-for="(time, index) in arrTime" :key="index" class="custom_time hover:text-main p-4 border-b border-[#B2B2B2] text-center">
@@ -105,8 +105,8 @@ import { important } from '#tailwind-config';
                </div> 
             </div>
 
-            <div class="mt-20">
-               <div class="bg-[#F7F5FF] border border-main rounded-t-3xl lg:p-20 p-10 flex flex-col gap-10">
+            <div class="lg:mt-20">
+               <div class="bg-[#F7F5FF] border border-main rounded-t-3xl lg:p-20 p-6 flex flex-col gap-10">
                   <h4 class="uppercase text-black">{{ block.lable }}</h4>
                   <div class="flex flex-col gap-6 border-b border-black pb-10">
                      <div class="bg-white rounded-3xl p-4 flex justify-between items-center lg:w-1/2 w-full">
@@ -144,8 +144,7 @@ import { important } from '#tailwind-config';
                      <button @click="isOpen = true" class="transition hover:opacity-90 hover:transition-all bg-[#B2B2B2] text-white text-center lg:w-1/3 w-full p-4 rounded-full">{{ block.button }}</button>
                   </div>
                </div>
-            </div>
-            <div class="lg:hidden block">
+               <div class="lg:hidden block">
                <UModal v-model="isOpen" id="custom-modal" prevent-close class="h-full">
                   <UCard :ui="{ ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800 ' }">
                         <div class="flex items-center justify-end">
@@ -158,6 +157,8 @@ import { important } from '#tailwind-config';
                   </UCard>
                </UModal>
             </div>
+            </div>
+   
          </div>
       </div>
      </div> 
