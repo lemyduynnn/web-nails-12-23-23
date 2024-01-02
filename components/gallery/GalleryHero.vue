@@ -18,12 +18,13 @@
          <swiper
             :slidesPerView="1"
             :spaceBetween="30"
+            :direction="'vertical'"
             :pagination="{ clickable: true }"
             :modules="modules"
             class="mySwiper w-full"
             @swiper="onSwiper"
           >
-            <swiper-slide v-for="(col, index) in block.our" :key="index">
+            <swiper-slide v-for="(col, index) in block.our" :key="index" class="flex flex-col">
                <div class="grid grid-cols-4 gap-4">
                   <div v-for="(listcol, index) in col.listcols" :key="index" class="flex flex-col gap-4">
                      <div v-for="(img, index) in listcol.listImg" :key="index" >

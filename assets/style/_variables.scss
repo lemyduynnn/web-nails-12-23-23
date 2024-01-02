@@ -1,4 +1,17 @@
 :root {
   --color-primary: #6C5CE7;
   --color-secondary: #FDCB6E;
+  .dp--tp-wrap{
+    display: none;
+  }
+  .dp__theme_light {
+    --dp-background-color: #EAEAEA;
+    --dp-hover-text-color: #6C5CE7;
+    --dp-hover-icon-color: #6C5CE7;
+    --dp-primary-color: #6C5CE7;
+    --dp-primary-disabled-color: #6C5CE7;
+    --dp-border-color: #EAEAEA;
+    --dp-menu-border-color: #EAEAEA;
+    --dp-border-color-hover: #EAEAEA;
+    }
 }

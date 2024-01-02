@@ -85,9 +85,9 @@ import { important } from '#tailwind-config';
                      <div class="border-b border-black px-6 py-4">
                         <h4 class="uppercase text-black">{{ block.title_time }}</h4>
                      </div>
-                     <div class="p-6 bg-[#EAEAEA] flex flex-col gap-10">
+                     <div class="p-6 bg-[#EAEAEA] flex flex-col">
                         <div class="grid lg:grid-cols-2 grid-cols-1 justify-center items-center lg:gap-4 gap-0 custom_height">
-                           <div class="p-4 w-full h-full flex flex-col">
+                           <div class="p-4 w-full">
                               <VueDatePicker :inline="{ input: false }" auto-apply id="custom_date" />
                            </div>
                            <div class="flex flex-col w-full custom_heightTime">
@@ -179,7 +179,7 @@ import '@vuepic/vue-datepicker/dist/main.css'
  const isOpen = ref(false);
  const activeMenuItem = ref(0); 
  const activeDownIndexes = ref<number[]>([]);
-   const arrTime = [];
+const arrTime = [];
 
 for (let i = 7; i <= 17; i++) {
   if (i === 12) continue;
@@ -217,11 +217,11 @@ for (let i = 7; i <= 17; i++) {
       background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) -2.83%, #FFF 49.27%, rgba(255, 255, 255, 0.00) 97.49%);
    }
    .custom_height{
-      height: calc(100% - 130px);
       overflow-y: hidden;
+      // height: calc(100% - 530px);
       .custom_heightTime {
          overflow: auto;
-         height: calc(100% - 130px);
+         height: calc(100% - 230px);
       }
    }
    #custom-modal{
@@ -235,31 +235,10 @@ for (let i = 7; i <= 17; i++) {
   }
 
   #custom_date {
-    background-color: #EAEAEA !important;
     width: 100%;
     display: block;
     overflow: auto;
-    height: calc(100% - 130px);
-
-    .dp__instance_calendar {
-        background-color: #EAEAEA !important;
-
-        .dp__menu_inner {
-            background-color: #EAEAEA !important;
-        }
-
-        .dp__today {
-            background: #6C5CE7 !important;
-            border: 1px solid #6C5CE7 !important;
-        }
-    }
-
-    .dp__month_year_row {
-        .dp__btn {
-            display: none !important;
-        }
-    }
-}
+   }
  }
  </style>
  
