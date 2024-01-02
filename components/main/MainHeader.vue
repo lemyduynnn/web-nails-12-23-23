@@ -8,7 +8,7 @@
           </div>
           <div class="hidden lg:flex">
             <ul class="lg:flex items-center h-full text-white">
-              <li v-for="item in headerData.nav" :key="item.link" :class="{ 'text-secondary': isActiveMenuItem(item.link) }" class="header-menu-line hover:text-secondary">
+              <li v-for="item in headerData.nav" :key="item.link" :class="{ 'text-secondary': isActiveMenuItem(item.link) }" class="hover:text-secondary">
                 <NuxtLink
                   class="block"
                   :to="item.link"
@@ -37,7 +37,7 @@
           </div>
           <nav>
             <ul class="flex flex-col">
-              <li v-for="item in headerData.nav" :key="item.link" class="hover:text-secondary">
+              <li v-for="item in headerData.nav" :key="item.link"  :class="{ 'text-secondary': isActiveMenuItem(item.link) }" class="hover:text-secondary">
                 <NuxtLink
                   class="block"
                   :to="item.link"

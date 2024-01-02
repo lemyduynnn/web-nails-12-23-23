@@ -62,22 +62,22 @@ blueprint:
   listStaff:
     - img: /images/staff.png
       name: Emily Martinez
+      position: Principal Stylist
+    - img: /images/staff1.png
+      name: Jack Harris
       position: Entry stylist
-    - img: /images/staff.png
-      name: Emily Martinez
-      position: Entry stylist
-    - img: /images/staff.png
-      name: Emily Martinez
-      position: Entry stylist
-    - img: /images/staff.png
-      name: Emily Martinez
-      position: Entry stylist
-    - img: /images/staff.png
-      name: Emily Martinez
-      position: Entry stylist
-    - img: /images/staff.png
-      name: Emily Martinez
-      position: Entry stylist
+    - img: /images/staff2.png
+      name: Stephanie Williams
+      position: Core Stylist
+    - img: /images/staff3.png
+      name: Melissa Johnson
+      position: Core Stylist
+    - img: /images/staff4.png
+      name: Andrew Moore
+      position: Basic Stylist
+    - img: /images/staff5.png
+      name: Stephanie Hall
+      position: Basic Stylist
   lable: Services selected
   button: Book now
   text_input: Add more people

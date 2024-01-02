@@ -18,7 +18,6 @@
          <swiper
             :slidesPerView="1"
             :spaceBetween="30"
-            :direction="'vertical'"
             :pagination="{ clickable: true }"
             :modules="modules"
             class="mySwiper w-full"
