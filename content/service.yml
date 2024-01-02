@@ -20,15 +20,34 @@ content_blocks:
         type:
           - name: HAIRCUT AND STYLE
             price: $42 - $78+
-          - name: HAIRCUT AND STYLE
-            price: $42 - $78+
-          - name: HAIRCUT AND STYLE
-            price: $42 - $78+
-          - name: HAIRCUT AND STYLE
-            price: $42 - $78+
+          - name: SHAMPOO AND STYLE
+            price: $44 - $60+
+          - name: CLIPPER CUTS
+            price: $20+
+          - name: FORMAL THERMAL STYLING
+            price: $85+
       - logo: /images/iconlogo.png
-        img: /images/our1.png
-        title: HAIRCUTS & STYLE
+        img: /images/our2.png
+        title: COLOR & FOIL
+        button: Book now
+        type:
+          - name: THE BASIC BELLE
+            price: $108 - $160+
+          - name: THE BOMBSHELL BELLE
+            price: $228 - $322+
+          - name: THE MAINTENANCE BELLE
+            price: $148 - $214+
+          - name: THE ULTIMATE BELLE
+            price: $348 - $484+
+          - name: THE MODERN BELLE
+            price: $188 - $268+
+          - name: THE ULTIMATE BELLE
+            price: $348 - $484+
+          - name: THE IT'S COMPLICATED BELLE
+            price: $348 - $484+
+      - logo: /images/iconlogo.png
+        img: /images/our3.png
+        title: HAIR EXTENSIONS
         button: Book now
         type:
           - name: HAIRCUT AND STYLE
@@ -40,29 +59,50 @@ content_blocks:
           - name: HAIRCUT AND STYLE
             price: $42 - $78+
       - logo: /images/iconlogo.png
-        img: /images/our1.png
-        title: HAIRCUTS & STYLE
+        img: /images/our4.png
+        title: HAIR TREATMENT
         button: Book now
         type:
-          - name: HAIRCUT AND STYLE
+          - name: BRAZILIAN BLOWOUT
+            price: $285+
+          - name: ORIBE RENEWAL REMEDY
             price: $42 - $78+
-          - name: HAIRCUT AND STYLE
+          - name: DEEP CONDITIONING MASKS
+            price: $25+
+          - name: DAVINES HERBAL
             price: $42 - $78+
-          - name: HAIRCUT AND STYLE
-            price: $42 - $78+
-          - name: HAIRCUT AND STYLE
-            price: $42 - $78+
+          - name: DAVINES TAILORING
+            price: $55
+          - name: K-18 FULL TREATMENT
+            price: $75
       - logo: /images/iconlogo.png
-        img: /images/our1.png
-        title: HAIRCUTS & STYLE
+        img: /images/our5.png
+        title: MAKE UP
         button: Book now
         type:
           - name: HAIRCUT AND STYLE
             price: $42 - $78+
-          - name: HAIRCUT AND STYLE
-            price: $42 - $78+
-          - name: HAIRCUT AND STYLE
-            price: $42 - $78+
-          - name: HAIRCUT AND STYLE
-            price: $42 - $78+
+          - name: SHAMPOO AND STYLE
+            price: $44 - $60+
+          - name: CLIPPER CUTS
+            price: $20+
+          - name: FORMAL THERMAL STYLING
+            price: $85+
+      - logo: /images/iconlogo.png
+        img: /images/our6.png
+        title: WAXING
+        button: Book now
+        type:
+          - name: EYEBROW WAX
+            price: $10
+          - name: LIP WAX
+            price: $228 - $322+
+          - name: CHIN WAX
+            price: $148 - $214+
+          - name: WHOLE FACE WAX
+            price: $10+
+          - name: LEG WAX
+            price: $25+
+          - name: BACK WAX
+            price: $75
     background: "#FFF"

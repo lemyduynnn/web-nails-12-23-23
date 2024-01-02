@@ -9,19 +9,30 @@
                 v-for="(menu, index) in block.menuTab"
                 :key="index"
                 :class="{ 'text-white bg-main': isActiveMenuItem(index) }"
-                @click="setActiveMenuItem(index)"
+                @click="handleTabMenu(index)"
                 class="w-full text-center hover:opacity-90 text-main whitespace-nowrap cursor-pointer px-4 py-2 font-[16px] rounded-full border border-main hover:border-main"
               >
                 <a>{{ menu.tab }}</a>
               </li>
          </ul>
-         <div class="grid grid-cols-4 gap-4">
-            <div v-for="(listcol, index) in block.listcols" :key="index" class="flex flex-col gap-4">
-               <div  v-for="(img, index) in listcol.listImg" :key="index" >
-                  <img :src="img.image" :alt="img.image_alt" class="object-cover w-full h-full"/>
-               </div>
-            </div>
-         </div>
+         <swiper
+            :slidesPerView="1"
+            :spaceBetween="30"
+            :pagination="{ clickable: true }"
+            :modules="modules"
+            class="mySwiper w-full"
+            @swiper="onSwiper"
+          >
+            <swiper-slide v-for="(col, index) in block.our" :key="index">
+               <div class="grid grid-cols-4 gap-4">
+                  <div v-for="(listcol, index) in col.listcols" :key="index" class="flex flex-col gap-4">
+                     <div v-for="(img, index) in listcol.listImg" :key="index" >
+                        <img :src="img.image" :alt="img.image_alt" class="object-cover w-full h-full"/>
+                     </div>
+                  </div>
+               </div>              
+            </swiper-slide>
+         </swiper>
          <!-- <div class="grid grid-flow-row grid-cols-4 gap-4 w-full">
             <div v-for="(img, index) in block.listImg" :key="index" class="flex flex-col ">
                <div class="flex items-start ">
@@ -35,24 +46,35 @@
  </template>
  
  <script lang="ts" setup>
- import { defineProps, ref } from 'vue';
- 
+import { defineProps, ref } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
  interface Props {
    dataBinding: any;
    block: any;
  }
  
  const { dataBinding, block } = defineProps<Props>();
- 
- const activeMenuItem = ref(0);
+
+const modules = [];
+const mySwiper = ref<any | null>(null);
+
+const onSwiper = (swiperInstance: any) => {
+  mySwiper.value = swiperInstance;
+};
  
  const isActiveMenuItem = (index: number) => {
-   return index === activeMenuItem.value;
- };
+  return mySwiper.value?.activeIndex === index;
+};
  
- const setActiveMenuItem = (index: number) => {
-   activeMenuItem.value = index;
- };
+ const handleTabMenu = (index: number) => {
+  if (mySwiper.value) {
+    mySwiper.value.slideTo(index);
+  }
+};
+
  </script>
  
  <style lang="scss" scoped>

@@ -8,57 +8,148 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-    id: hero
-    title: Our Gallery
-    menuTab:
-      - tab: Hair
-      - tab: Make-up
-      - tab: Waxing
-    listcols:
-      - listImg:
-          - image: /images/galleryhero1.png
-            image_alt:
-          - image: /images/galleryhero2.png
-            image_alt:
-          - image: /images/galleryhero3.png
-            image_alt:
-          - image: /images/galleryhero4.png
-            image_alt:
-          - image: /images/galleryhero5.png
-            image_alt:
-      - listImg:
-          - image: /images/galleryhero6.png
-            image_alt:
-          - image: /images/galleryhero7.png
-            image_alt:
-          - image: /images/galleryhero8.png
-            image_alt:
-          - image: /images/galleryhero9.png
-            image_alt:
-          - image: /images/galleryhero10.png
-            image_alt:
-      - listImg:
-          - image: /images/galleryhero11.png
-            image_alt:
-          - image: /images/galleryhero12.png
-            image_alt:
-          - image: /images/galleryhero13.png
-            image_alt:
-          - image: /images/galleryhero14.png
-            image_alt:
-          - image: /images/galleryhero1.png
-            image_alt:
-      - listImg:
-          - image: /images/galleryhero2.png
-            image_alt:
-          - image: /images/galleryhero3.png
-            image_alt:
-          - image: /images/galleryhero4.png
-            image_alt:
-          - image: /images/galleryhero5.png
-            image_alt:
-          - image: /images/galleryhero6.png
-            image_alt:
+  id: hero
+  title: Our Gallery
+  menuTab:
+    - tab: Hair
+    - tab: Make-up
+    - tab: Waxing
+    our:
+      - listcols:
+          - listImg:
+              - image: /images/galleryhero1.png
+                image_alt:
+              - image: /images/galleryhero2.png
+                image_alt:
+              - image: /images/galleryhero3.png
+                image_alt:
+              - image: /images/galleryhero4.png
+                image_alt:
+              - image: /images/galleryhero5.png
+                image_alt:
+          - listImg:
+              - image: /images/galleryhero6.png
+                image_alt:
+              - image: /images/galleryhero7.png
+                image_alt:
+              - image: /images/galleryhero8.png
+                image_alt:
+              - image: /images/galleryhero9.png
+                image_alt:
+              - image: /images/galleryhero10.png
+                image_alt:
+          - listImg:
+              - image: /images/galleryhero11.png
+                image_alt:
+              - image: /images/galleryhero12.png
+                image_alt:
+              - image: /images/galleryhero13.png
+                image_alt:
+              - image: /images/galleryhero14.png
+                image_alt:
+              - image: /images/galleryhero1.png
+                image_alt:
+          - listImg:
+              - image: /images/galleryhero2.png
+                image_alt:
+              - image: /images/galleryhero3.png
+                image_alt:
+              - image: /images/galleryhero4.png
+                image_alt:
+              - image: /images/galleryhero5.png
+                image_alt:
+              - image: /images/galleryhero6.png
+                image_alt:
+      - listcols:
+          - listImg:
+              - image: /images/galleryhero5.png
+                image_alt:
+              - image: /images/galleryhero4.png
+                image_alt:
+              - image: /images/galleryhero2.png
+                image_alt:
+              - image: /images/galleryhero1.png
+                image_alt:
+              - image: /images/galleryhero3.png
+                image_alt:
+          - listImg:
+              - image: /images/galleryhero10.png
+                image_alt:
+              - image: /images/galleryhero6.png
+                image_alt:
+              - image: /images/galleryhero9.png
+                image_alt:
+              - image: /images/galleryhero7.png
+                image_alt:
+              - image: /images/galleryhero8.png
+                image_alt:
+          - listImg:
+              - image: /images/galleryhero14.png
+                image_alt:
+              - image: /images/galleryhero13.png
+                image_alt:
+              - image: /images/galleryhero12.png
+                image_alt:
+              - image: /images/galleryhero11.png
+                image_alt:
+              - image: /images/galleryhero1.png
+                image_alt:
+          - listImg:
+              - image: /images/galleryhero6.png
+                image_alt:
+              - image: /images/galleryhero1.png
+                image_alt:
+              - image: /images/galleryhero2.png
+                image_alt:
+              - image: /images/galleryhero4.png
+                image_alt:
+              - image: /images/galleryhero5.png
+                image_alt:
+      - listcols:
+          - listImg:
+              - image: /images/galleryhero4.png
+                image_alt:
+              - image: /images/galleryhero2.png
+                image_alt:
+              - image: /images/galleryhero1.png
+                image_alt:
+              - image: /images/galleryhero4.png
+                image_alt:
+              - image: /images/galleryhero5.png
+                image_alt:
+          - listImg:
+              - image: /images/galleryhero9.png
+                image_alt:
+              - image: /images/galleryhero8.png
+                image_alt:
+              - image: /images/galleryhero7.png
+                image_alt:
+              - image: /images/galleryhero10.png
+                image_alt:
+              - image: /images/galleryhero6.png
+                image_alt:
+          - listImg:
+              - image: /images/galleryhero12.png
+                image_alt:
+              - image: /images/galleryhero13.png
+                image_alt:
+              - image: /images/galleryhero11.png
+                image_alt:
+              - image: /images/galleryhero14.png
+                image_alt:
+              - image: /images/galleryhero1.png
+                image_alt:
+          - listImg:
+              - image: /images/galleryhero2.png
+                image_alt:
+              - image: /images/galleryhero3.png
+                image_alt:
+              - image: /images/galleryhero4.png
+                image_alt:
+              - image: /images/galleryhero5.png
+                image_alt:
+              - image: /images/galleryhero6.png
+                image_alt:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
