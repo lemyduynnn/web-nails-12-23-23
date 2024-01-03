@@ -17,40 +17,48 @@ content_blocks:
       - title: Special offers
         menuItem:
           - title: Deluxe 1-2 Row Maintenence
-            price: $172
+            price: $33
             time: Approx 90 mins
+            id: 1
             description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
           - title: Deluxe 1-2 Row Maintenence
             price: $172
             time: Approx 90 mins
+            id: 2
             description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
           - title: Deluxe 1-2 Row Maintenence
             price: $172
             time: Approx 90 mins
+            id: 3
             description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
           - title: Deluxe 1-2 Row Maintenence
             price: $172
             time: Approx 90 mins
+            id: 4
             description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
       - title: Brazilian or Reconstructive Treatments
       - title: Formal Event/Bridal
       - title: Hair Cut & styles
         menuItem:
           - title: Deluxe 1-2 Row Maintenence
-            price: $172
+            price: $44
             time: Approx 90 mins
+            id: 5
             description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
           - title: Deluxe 1-2 Row Maintenence
             price: $172
             time: Approx 90 mins
+            id: 6
             description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
           - title: Deluxe 1-2 Row Maintenence
             price: $172
             time: Approx 90 mins
+            id: 7
             description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
           - title: Deluxe 1-2 Row Maintenence
             price: $172
             time: Approx 90 mins
+            id: 8
             description: 1 or 2 Rows moved up; Full Service Includes a relaxing shampoo, scalp treatment, extension restoration treatment, blow dry, and styled finish.
       - title: modern hair color
       - title: Complimentary consultations
