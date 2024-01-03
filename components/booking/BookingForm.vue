@@ -158,7 +158,6 @@ import { important } from '#tailwind-config';
                </UModal>
             </div>
             </div>
-   
          </div>
       </div>
      </div> 
@@ -188,7 +187,6 @@ for (let i = 7; i <= 17; i++) {
   const time = `${hour.toString().padStart(2, '0')}:00 ${period}`;
   arrTime.push({ time });
 }
-
 
  const isActiveDown = (index: number) => {
    return activeDownIndexes.value.includes(index);
