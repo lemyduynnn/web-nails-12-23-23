@@ -226,13 +226,68 @@
                   src="/images/add.png"
                   alt=""
                   class="cursor-pointer w-10 h-10"
+                  @click="openModalAdd = true"
                 />
                 <span>{{ block.text_input }}</span>
+                <div class="lg:hidden block">
+                  <UModal
+                     v-model="openModalAdd"
+                     id="custom-modalAdd"
+                     prevent-close
+                     class="h-full"
+                  >
+                     <UCard
+                        :ui="{
+                        ring: '',
+                        divide: 'divide-y divide-gray-100 dark:divide-gray-800 ',
+                        }"
+                     >
+                        <div class="flex items-center justify-end">
+                        <UButton
+                           color="gray"
+                           variant="ghost"
+                           icon="i-heroicons-x-mark-20-solid"
+                           class="-my-1"
+                           @click="openModalAdd = false"
+                        />
+                        </div>
+                        <div
+                        class="flex flex-col gap-4 justify-center items-center pb-10"
+                        >
+                           <h2 class="text-main uppercase text-2xl">Add more people</h2>
+                           <form class="w-full"  @submit.prevent="validateForm">
+                              <div class="flex flex-col gap-4 w-full py-4">
+                                 <UInput v-model="name" placeholder="First and last name..."/>
+                                 <p class="text-red-500">{{ nameError }}</p>
+                                 <UInput v-model="phone" placeholder="Phone..."/>
+                                 <p class="text-red-500">{{ phoneError }}</p>
+                                 <UInput v-model="email" placeholder="Email..."/>
+                                 <p class="text-red-500">{{ emailError }}</p>
+                                 <label class="text-main">Gender</label>
+                                 <div class="flex gap-10">
+                                    <UCheckbox v-model="male" class="text-main" label="Male" />
+                                    <UCheckbox v-model="female" class="text-main" label="Female" />
+                                 </div>
+                                 <p class="text-red-500">{{ genderError }}</p>
+                              </div>
+                           <div class="flex flex-col justify-center items-center w-full">
+                              <button
+                                 @click="!isFormValid"
+                                 class="cursor-pointer transition hover:opacity-90 hover:transition-all bg-main text-white text-center lg:w-1/3 w-full p-4 rounded-full"
+                              >
+                                 Submit
+                              </button>
+                           </div>
+                           </form>                           
+                        </div>
+                     </UCard>
+                  </UModal>
+                </div>
               </div>
               <div class="flex flex-col justify-center items-center w-full">
                 <button
                   @click="handleButtonClick"
-                  :class="{ 'bg-main': isBothArraysEmpty }"
+                  :class="{ 'bg-main': changeColor }"
                   class="transition hover:opacity-90 hover:transition-all bg-[#B2B2B2] text-white text-center lg:w-1/3 w-full p-4 rounded-full"
                 >
                   {{ block.button }}
@@ -281,6 +336,7 @@
   </section>
 </template>
 
+
 <script setup lang="ts">
 import { defineProps, ref, computed } from "vue";
 import VueDatePicker from "@vuepic/vue-datepicker";
@@ -292,9 +348,69 @@ interface Props {
 }
 const { dataBinding, block } = defineProps<Props>();
 const isOpen = ref(false);
+const openModalAdd = ref(false);
 const activeMenuItem = ref(0);
 const activeDownIndexes = ref<number[]>([]);
 const arrTime = [];
+const name = ref("");
+const phone = ref("");
+const email = ref("");
+const male = ref(false);
+const female = ref(false);
+const isFormValid = ref(false);
+const nameError = ref("");
+const phoneError = ref("");
+const emailError = ref("");
+const genderError = ref("");
+
+const validateForm = () => {
+  nameError.value = "";
+  phoneError.value = "";
+  emailError.value = "";
+  genderError.value = "";
+
+  if (name.value.trim() === "") {
+    nameError.value = "Please enter your name";
+  }
+
+  if (phone.value.trim() === "") {
+    phoneError.value = "Please enter your phone number";
+  }
+
+  if (email.value.trim() === "") {
+    emailError.value = "Please enter your email";
+  }
+
+  if (!(male.value || female.value)) {
+    genderError.value = "Please select your gender";
+  }
+
+  const hasErrors =
+    nameError.value || phoneError.value || emailError.value || genderError.value;
+
+  isFormValid.value = !hasErrors;
+
+  if (isFormValid.value) {
+    submitForm();
+  }
+};
+
+const submitForm = () => {
+  if (isFormValid.value) {
+    console.log("Form submitted!");
+    openModalAdd.value = false;
+    resetForm();
+  }
+};
+
+const resetForm = () => {
+  name.value = "";
+  phone.value = "";
+  email.value = "";
+  male.value = false;
+  female.value = false;
+  isFormValid.value = false;
+};
 
 const staffChecked = ref(
   block.listStaff.map((e: any) => {
@@ -312,6 +428,7 @@ const data = ref<any>(block.listService.map((item: any) => {
    }
 } 
 ))
+
 const servicesChecked = computed(() => {
    return data.value.map((item: any) => item?.menuItem || [])
                     .flat()
@@ -327,12 +444,12 @@ const removeItem = (id: number) => {
   }
 };
 
-const isBothArraysEmpty = computed(() => {
+const changeColor = computed(() => {
   return staffChecked.value.some(item => item.active) && servicesChecked.value.some(item => item.active);
 });
 
 const handleButtonClick = () => {
-  if (isBothArraysEmpty.value) {
+  if (changeColor.value) {
     isOpen.value = true;
   } else {
    alert('Please choose the complete items!')
@@ -386,14 +503,6 @@ const setActiveMenuItem = (index: number) => {
     .custom_heightTime {
       overflow: auto;
       height: calc(100% - 230px);
-    }
-  }
-  #custom-modal {
-    .sm\:max-w-lg {
-      padding: 10px;
-      border: 1px solid #6c5ce7;
-    }
-    .bg-gray-200\/75 {
     }
   }
 
