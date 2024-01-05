@@ -4,7 +4,7 @@ spec:
     - content_blocks
   label: Services Our
   description: Services Our
-  icon: "cottage"
+  icon: "i-mdi-account-supervisor-circle-outline"
 
 # Defines the structure of this component, as well as the default values
 blueprint:

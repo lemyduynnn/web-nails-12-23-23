@@ -68,6 +68,11 @@ export default function (pageData, route) {
       hid: 'canonical',
       rel: 'canonical',
       href: canonicalUrl
+    },
+    {
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: siteData.favicon_icon
     }]
   }
 }

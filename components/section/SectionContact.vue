@@ -11,8 +11,8 @@
           <img :src="block.image" :alt="block.image_alt" class="rounded-[60px]"/>
           <div class="flex flex-col gap-10">
             <div class="flex flex-col gap-6">
-              <div v-for="(list, index) in block.infor" :key="index" class="flex gap-3">
-                <span class="text-main whitespace-nowrap">{{ list.lable }} :</span><span v-html="list.text"></span>
+              <div v-for="(list, index) in block.info" :key="index" class="flex gap-3">
+                <span class="text-main whitespace-nowrap">{{ list.label }} :</span><span v-html="list.text"></span>
               </div>
             </div>
             <div class="flex flex-col justify-center items-center">

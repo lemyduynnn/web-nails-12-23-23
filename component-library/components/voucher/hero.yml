@@ -4,7 +4,7 @@ spec:
     - content_blocks
   label: Voucher Hero
   description: Voucher Hero
-  icon: "cottage"
+  icon: "i-mdi-gift-outline"
 
 # Defines the structure of this component, as well as the default values
 blueprint:

@@ -12,7 +12,7 @@ collections_config:
     path: content
     glob:
       - content/*.yml
-    url: '/[slug]'
+    url: "/[slug]"
     output: true
     icon: wysiwyg
     _enabled_editors:
@@ -31,6 +31,10 @@ _inputs:
     type: text
     label: Page title
     description:
+  permalink:
+    type: text
+    label: Permalink
+    description:
   description:
     type: text
     label: Page description
@@ -38,6 +42,10 @@ _inputs:
   layout:
     type: text
     label: Page layout
+    description:
+  thumbImg.image:
+    type: image
+    label: Thumbnail image
     description:
   seo.title:
     type: text
@@ -52,13 +60,31 @@ _inputs:
     label: Seo url
     description:
   seo.image:
-    type: text
+    type: image
     label: Seo image
     description:
   seo.no_index:
     type: checkbox
     label: Seo no index
     description:
+  seo.page_description:
+    label: Page Description
+    type: text
+    description: If empty, defaults to the description set in the Site SEO data file
+  seo.canonical_url:
+    label: Canonical URL
+    type: text
+    description: If empty, defaults to the URL of the page
+  seo.featured_image:
+    label: Featured Image
+    type: image
+    description: If empty, defaults to the image set in the Site SEO data file
+  seo.author_twitter_handle:
+    label: Author Twitter Handle
+    type: text
+  seo.open_graph_type:
+    label: Open Graph Type
+    type: text
   content_blocks:
     label: Content blocks
     description:

@@ -4,7 +4,7 @@ spec:
     - content_blocks
   label: Booking Contact
   description: Booking Contact
-  icon: "cottage"
+  icon: "i-mdi-phone"
 
 # Defines the structure of this component, as well as the default values
 blueprint:
@@ -12,14 +12,14 @@ blueprint:
   title: Contact Us
   image: /images/contact.jpg
   image_alt:
-  infor:
-    - lable: Phone
+  info:
+    - label: Phone
       text: 832-968-6668
-    - lable: Address
+    - label: Address
       text: 11011 Richmond Ave, Ste 900, Houston, TX 77042
-    - lable: Email
+    - label: Email
       text: contact@fastboy.net
-    - lable: Opening hours
+    - label: Opening hours
       text: Monday — Thursday 10:00 – 20:00 <br/> Friday — Sunday 10:00 – 19:00
   button: Book consultation
   background: "#F7F5FF"
@@ -35,10 +35,10 @@ _inputs:
   title:
     type: text
     label: Title
-  infor[*].lable:
+  info[*].label:
     type: text
-    label: Lable
-  infor[*].text:
+    label: label
+  info[*].text:
     type: text
     label: Text
   button:

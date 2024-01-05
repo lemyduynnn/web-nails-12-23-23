@@ -1,8 +1,8 @@
 {
     "BaseURL": "http://example.org",
-    "site_title": "Salon",
-    "favicon_icon": "/images/favicon.ico",
-    "favicon_image": "/images/favicon.png",
+    "site_title": "The Nail Lab",
+    "favicon_icon": "/favicon.ico",
+    "favicon_image": "/favicon.png",
     "description": "A polished, marketing website template built with Eleventy",
     "twitter_image": "/images/feature/feature-hero-two.png",
     "twitter_site": "@twitter_site",
@@ -10,6 +10,18 @@
     "_inputs": {
         "twitter_site": {
             "type": "twitter"
+        },
+        "favicon_icon": {
+            "type": "image"
+        },
+        "favicon_image": {
+            "type": "image"
+        },
+        "twitter_image": {
+            "type": "image"
+        },
+        "image": {
+            "type": "image"
         }
     }
 }

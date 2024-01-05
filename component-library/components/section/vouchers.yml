@@ -4,19 +4,19 @@ spec:
     - content_blocks
   label: Service Section
   description: Service Section
-  icon: "cottage"
+  icon: "i-mdi-gift-outline"
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-    id: vouchers
-    title: Gift Cards/ vouchers
-    dataImg:
-      - image: /images/vouchers1.png
-        image_alt:
-      - image: /images/vouchers2.png
-        image_alt:
-    background: "#FFFAF1"
-    button: See more
+  id: vouchers
+  title: Gift Cards/ vouchers
+  dataImg:
+    - image: /images/vouchers1.png
+      image_alt:
+    - image: /images/vouchers2.png
+      image_alt:
+  background: "#FFFAF1"
+  button: See more
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 

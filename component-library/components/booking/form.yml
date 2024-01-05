@@ -4,7 +4,7 @@ spec:
     - content_blocks
   label: Booking Form
   description: Booking Form
-  icon: "cottage"
+  icon: "i-mdi-book-edit-outline"
 
 # Defines the structure of this component, as well as the default values
 blueprint:
@@ -78,7 +78,7 @@ blueprint:
     - img: /images/staff5.png
       name: Stephanie Hall
       position: Basic Stylist
-  lable: Services selected
+  label: Services selected
   button: Book now
   text_input: Add more people
   background: "#FFF"

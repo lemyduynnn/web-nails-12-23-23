@@ -1,4 +1,16 @@
 title: Home
+permalink:
+seo:
+  page_description: >-
+    We believe that a good email marketing strategy is the key to growth. So
+    we’re helping you grow your business with tools and resources that make
+    email marketing easy.
+  canonical_url:
+  featured_image:
+  featured_image_alt:
+  author_twitter_handle:
+  open_graph_type:
+  no_index: false
 content_blocks:
   - _block_name: section/banner
     id: banner
@@ -134,7 +146,7 @@ content_blocks:
     id: client
     title: Client’s endless
     background: "#FFF"
-    data: 
+    data:
       - name: Kimberly Miller
         mission: clients beauty salon
         user: /images/user.png
@@ -169,7 +181,7 @@ content_blocks:
         user_alt:
         background: "#FFF"
         description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        icon: /images/f.png  
+        icon: /images/f.png
       - name: Kimberly Miller
         mission: clients beauty salon
         user: /images/user.png
@@ -245,14 +257,14 @@ content_blocks:
     title: Contact Us
     image: /images/contact.jpg
     image_alt:
-    infor:
-      - lable: Phone
+    info:
+      - label: Phone
         text: 832-968-6668
-      - lable: Address
+      - label: Address
         text: 11011 Richmond Ave, Ste 900, Houston, TX 77042
-      - lable: Email
+      - label: Email
         text: contact@fastboy.net
-      - lable: Opening hours
+      - label: Opening hours
         text: Monday — Thursday 10:00 – 20:00 <br/> Friday — Sunday 10:00 – 19:00
     button: Book consultation
     background: "#F7F5FF"
@@ -260,5 +272,5 @@ content_blocks:
   - _block_name: section/editor
     id: editor
     title: Editor
-    background: '#F7F5FF'
+    background: "#F7F5FF"
     content: ""

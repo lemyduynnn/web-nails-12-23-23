@@ -172,7 +172,7 @@
             <div
               class="bg-[#F7F5FF] border border-main rounded-t-3xl lg:p-20 p-6 flex flex-col gap-10"
             >
-              <h4 class="uppercase text-black">{{ block.lable }}</h4>
+              <h4 class="uppercase text-black">{{ block.label }}</h4>
               <div
                 class="grid lg:grid-cols-2 grid-cols-1 justify-between items-center gap-4"
               >
@@ -265,8 +265,8 @@
                                  <p class="text-red-500">{{ emailError }}</p>
                                  <label class="text-main">Gender</label>
                                  <div class="flex gap-10">
-                                    <UCheckbox v-model="male" class="text-main" label="Male" />
-                                    <UCheckbox v-model="female" class="text-main" label="Female" />
+                                    <UCheckbox color="indigo" label="Male" value="male" v-model="male"/>
+                                    <UCheckbox color="indigo" label="Female" value="female" v-model="female"/>
                                  </div>
                                  <p class="text-red-500">{{ genderError }}</p>
                               </div>
@@ -356,7 +356,7 @@ const name = ref("");
 const phone = ref("");
 const email = ref("");
 const male = ref(false);
-const female = ref(false);
+const female = ref(false); 
 const isFormValid = ref(false);
 const nameError = ref("");
 const phoneError = ref("");
@@ -382,8 +382,8 @@ const validateForm = () => {
   }
 
   if (!(male.value || female.value)) {
-    genderError.value = "Please select your gender";
-  }
+   genderError.value = "Please select your gender";
+   }
 
   const hasErrors =
     nameError.value || phoneError.value || emailError.value || genderError.value;

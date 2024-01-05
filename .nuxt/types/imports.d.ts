@@ -145,7 +145,6 @@ declare global {
   const useModel: typeof import('../../node_modules/.pnpm/vue@3.3.4/node_modules/vue')['useModel']
   const useNuxtApp: typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useNuxtApp']
   const useNuxtData: typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useNuxtData']
-  const useNuxtDevTools: typeof import('../../node_modules/.pnpm/@nuxt+devtools@1.0.4_nuxt@3.7.4_vite@4.4.11/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']
   const usePopper: typeof import('../../node_modules/.pnpm/@nuxt+ui@2.9.0_vue@3.3.4_webpack@5.88.2/node_modules/@nuxt/ui/dist/runtime/composables/usePopper')['usePopper']
   const useRequestEvent: typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useRequestEvent']
   const useRequestFetch: typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useRequestFetch']
@@ -333,7 +332,6 @@ declare module 'vue' {
     readonly useModel: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.3.4/node_modules/vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useNuxtData']>
-    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+devtools@1.0.4_nuxt@3.7.4_vite@4.4.11/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly usePopper: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+ui@2.9.0_vue@3.3.4_webpack@5.88.2/node_modules/@nuxt/ui/dist/runtime/composables/usePopper')['usePopper']>
     readonly useRequestEvent: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useRequestEvent']>
     readonly useRequestFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useRequestFetch']>
@@ -515,7 +513,6 @@ declare module '@vue/runtime-core' {
     readonly useModel: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.3.4/node_modules/vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useNuxtData']>
-    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+devtools@1.0.4_nuxt@3.7.4_vite@4.4.11/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly usePopper: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+ui@2.9.0_vue@3.3.4_webpack@5.88.2/node_modules/@nuxt/ui/dist/runtime/composables/usePopper')['usePopper']>
     readonly useRequestEvent: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useRequestEvent']>
     readonly useRequestFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.7.4_eslint@8.51.0_sass@1.69.2_typescript@5.2.2/node_modules/nuxt/dist/app')['useRequestFetch']>
